@@ -1,0 +1,1850 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پخش نور | پخش و فروش عمده لوازم یدکی خودرو</title>
+  <meta name="description" content="پخش نور؛ پخش و فروش عمده لوازم یدکی خودرو. مشاهده محصولات، برندها و ثبت درخواست خرید یا استعلام قیمت.">
+  <meta name="theme-color" content="#0A1B33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A1B33'/%3E%3Cpath d='M14 50 40 14h10L24 50z' fill='%23F59E0B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+  <style>
+:root {
+  --navy: #0a1b33;
+  --navy-2: #12294a;
+  --navy-3: #1d3a63;
+  --amber: #f2a20c;
+  --amber-d: #c27f00;
+  --ink: #0f172a;
+  --mute: #5b6676;
+  --line: #dfe4ec;
+  --paper: #f5f7fa;
+  --white: #fff;
+  --ok: #15803d;
+  --bad: #b42318;
+  --r-s: 6px;
+  --r-m: 12px;
+  --r-l: 22px;
+  --wrap: 1180px;
+  font-family: "Vazirmatn", Tahoma, "Segoe UI", sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); line-height: 1.85; font-size: 16px; -webkit-text-size-adjust: 100%; }
+img, svg { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+h1, h2, h3 { line-height: 1.4; margin: 0 0 .5em; font-weight: 800; }
+h1 { font-size: clamp(1.7rem, 4.6vw, 2.9rem); }
+h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); }
+h3 { font-size: 1.05rem; }
+p { margin: 0 0 1em; }
+:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; border-radius: 4px; }
+.skip { position: absolute; inset-inline-start: 8px; top: -60px; background: var(--amber); color: var(--navy); padding: .5rem 1rem; z-index: 99; border-radius: var(--r-s); font-weight: 700; }
+.skip:focus { top: 8px; }
+.wrap { width: min(100% - 2rem, var(--wrap)); margin-inline: auto; }
+.loading, .empty { text-align: center; color: var(--mute); padding: 4rem 1rem; }
+[hidden] { display: none !important; }
+
+#demo-banner { background: #fff4d6; color: #5a3d00; text-align: center; padding: .45rem 1rem; font-size: .88rem; border-bottom: 1px solid #ecd28a; }
+
+/* ---------- Header ---------- */
+#site-header { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 30; box-shadow: 0 1px 0 rgba(255,255,255,.08); }
+.bar { display: flex; align-items: center; gap: 1rem; min-height: 68px; }
+.logo { display: flex; align-items: center; gap: .6rem; font-weight: 900; font-size: 1.35rem; letter-spacing: -.01em; }
+.logo svg { width: 38px; height: 38px; flex: none; }
+.logo img { height: 40px; width: auto; }
+.nav { display: flex; gap: .25rem; margin-inline-start: 1rem; }
+.nav a { padding: .45rem .8rem; border-radius: var(--r-s); color: #cdd7e6; font-size: .95rem; }
+.nav a:hover, .nav a[aria-current="page"] { color: #fff; background: var(--navy-2); }
+.bar__tools { margin-inline-start: auto; display: flex; align-items: center; gap: .5rem; }
+.search { display: flex; background: var(--navy-2); border-radius: var(--r-s); overflow: hidden; border: 1px solid var(--navy-3); }
+.search input { background: transparent; border: 0; padding: .5rem .8rem; color: #fff; width: 200px; }
+.search input::placeholder { color: #8fa3c1; }
+.search button { background: transparent; border: 0; color: var(--amber); padding: 0 .8rem; cursor: pointer; }
+.cartlink { position: relative; padding: .5rem .9rem; background: var(--amber); color: var(--navy); border-radius: var(--r-s); font-weight: 800; font-size: .92rem; white-space: nowrap; }
+.cartlink b { background: var(--navy); color: #fff; border-radius: 99px; padding: 0 .5rem; margin-inline-start: .35rem; font-size: .8rem; }
+.menu-btn { display: none; background: transparent; border: 1px solid var(--navy-3); color: #fff; border-radius: var(--r-s); padding: .4rem .7rem; cursor: pointer; }
+
+/* ---------- Buttons / forms ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; background: var(--amber); color: var(--navy); font-weight: 800; border: 0; border-radius: var(--r-s); padding: .7rem 1.3rem; cursor: pointer; transition: background .15s; }
+.btn:hover { background: #ffb629; }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+.btn--ghost { background: transparent; color: inherit; border: 1.5px solid currentColor; }
+.btn--ghost:hover { background: rgba(127,127,127,.12); }
+.btn--navy { background: var(--navy); color: #fff; }
+.btn--navy:hover { background: var(--navy-3); }
+.btn--danger { background: var(--bad); color: #fff; }
+.btn--sm { padding: .35rem .8rem; font-size: .88rem; }
+.field { display: grid; gap: .3rem; margin-bottom: 1rem; }
+.field label { font-weight: 700; font-size: .92rem; }
+.field small { color: var(--mute); }
+.in, select.in, textarea.in { width: 100%; background: #fff; border: 1.5px solid var(--line); border-radius: var(--r-s); padding: .6rem .8rem; }
+.in:focus { border-color: var(--navy-3); outline: none; box-shadow: 0 0 0 3px rgba(242,162,12,.35); }
+textarea.in { min-height: 110px; resize: vertical; }
+.hp { position: absolute; inset-inline-start: -9999px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+
+/* ---------- Hero: یک لحظه‌ی حرکتی — پرتوی نور که یک‌بار روی سایت می‌گذرد ---------- */
+.hero { background: var(--navy); color: #fff; position: relative; overflow: hidden; padding: clamp(3rem, 9vw, 6.5rem) 0; }
+.hero::before { content: ""; position: absolute; inset-block: -20% -20%; inset-inline-start: -30%; width: 38%; background: linear-gradient(100deg, transparent, rgba(242,162,12,.55) 48%, rgba(255,226,150,.9) 50%, rgba(242,162,12,.35) 52%, transparent); transform: skewX(-18deg); animation: beam 1.9s .25s cubic-bezier(.3,.6,.2,1) both; filter: blur(2px); }
+.hero::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(100deg, transparent 0 46px, rgba(255,255,255,.035) 46px 47px); pointer-events: none; }
+@keyframes beam { from { transform: translateX(0) skewX(-18deg); opacity: 1; } to { transform: translateX(-340%) skewX(-18deg); opacity: 0; } }
+.hero .wrap { position: relative; z-index: 1; max-width: 860px; }
+.hero h1 { margin-bottom: .4em; }
+.hero p { color: #c4d1e6; font-size: 1.1rem; max-width: 56ch; }
+.hero__cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.6rem; }
+.hero .btn--ghost { color: #fff; }
+
+/* ---------- Sections ---------- */
+.sec { padding: clamp(2.2rem, 6vw, 4rem) 0; }
+.sec--white { background: #fff; }
+.sec__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.4rem; flex-wrap: wrap; }
+.sec__head a { color: var(--amber-d); font-weight: 700; }
+.cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: .8rem; }
+.cat { display: flex; align-items: center; gap: .8rem; padding: 1rem; background: #fff; border: 1px solid var(--line); border-inline-start: 4px solid var(--amber); border-radius: var(--r-s); font-weight: 700; transition: border-color .15s, transform .15s; }
+.cat:hover { border-color: var(--navy-3); border-inline-start-color: var(--amber); transform: translateY(-2px); }
+.cat small { margin-inline-start: auto; color: var(--mute); font-weight: 400; }
+.brands { display: flex; flex-wrap: wrap; gap: .6rem; }
+.brand { padding: .55rem 1.2rem; background: #fff; border: 1.5px solid var(--line); border-radius: 99px; font-weight: 700; }
+.brand:hover { border-color: var(--navy); background: var(--navy); color: #fff; }
+
+/* ---------- Products ---------- */
+.pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1rem; }
+.pcard { background: #fff; border: 1px solid var(--line); border-radius: var(--r-m); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .18s, border-color .18s; }
+.pcard:hover { border-color: var(--navy-3); box-shadow: 0 8px 22px rgba(10,27,51,.1); }
+.pcard__img { aspect-ratio: 4/3; background: #eef1f6; display: grid; place-items: center; color: #aab4c5; overflow: hidden; }
+.pcard__img img, .pcard__img .noimg { width: 100%; height: 100%; object-fit: cover; }
+.noimg { display: grid; place-items: center; background: #eef1f6; color: #aab4c5; }
+.noimg svg { width: 38%; }
+.pcard__body { padding: .9rem 1rem 1rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+.pcard__sku { font-size: .8rem; color: var(--mute); direction: ltr; text-align: right; font-variant-numeric: tabular-nums; }
+.pcard__name { font-weight: 800; font-size: 1rem; line-height: 1.6; }
+.pcard__meta { font-size: .85rem; color: var(--mute); }
+.pcard__foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: .5rem; padding-top: .5rem; flex-wrap: wrap; }
+.price b { font-size: 1.12rem; }
+.price small { color: var(--mute); }
+.price__old { color: var(--mute); font-size: .82rem; margin-inline-end: .4rem; }
+.price--call { color: var(--amber-d); font-weight: 700; }
+.tag { font-size: .78rem; font-weight: 700; padding: .12rem .6rem; border-radius: 99px; }
+.tag--available { background: #dcf5e4; color: var(--ok); }
+.tag--unavailable { background: #fde7e5; color: var(--bad); }
+.tag--call { background: #fff1cf; color: #8a5a00; }
+
+.shop { display: grid; grid-template-columns: 260px 1fr; gap: 1.5rem; padding: 2rem 0 4rem; align-items: start; }
+.filters { background: #fff; border: 1px solid var(--line); border-radius: var(--r-m); padding: 1rem; position: sticky; top: 84px; }
+.filters h3 { margin-bottom: .8rem; }
+.filters .field { margin-bottom: .8rem; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.toolbar select { width: auto; }
+.filters-toggle { display: none; }
+.pager { display: flex; gap: .4rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+.pager button { min-width: 40px; padding: .4rem .7rem; border: 1px solid var(--line); background: #fff; border-radius: var(--r-s); cursor: pointer; }
+.pager button[aria-current="true"] { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+.crumbs { padding: 1rem 0 0; font-size: .88rem; color: var(--mute); }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+.pdetail { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; padding: 1.2rem 0 3rem; align-items: start; }
+.pdetail__img { background: #fff; border: 1px solid var(--line); border-radius: var(--r-m); overflow: hidden; aspect-ratio: 1; }
+.pdetail__img img, .pdetail__img .noimg { width: 100%; height: 100%; object-fit: contain; }
+.pdetail__price { font-size: 1.5rem; margin: 1rem 0; }
+.facts { width: 100%; border-collapse: collapse; margin: 1rem 0; background: #fff; border: 1px solid var(--line); border-radius: var(--r-s); overflow: hidden; }
+.facts th, .facts td { text-align: right; padding: .55rem .9rem; border-bottom: 1px solid var(--line); font-size: .93rem; }
+.facts th { width: 38%; background: #f0f3f8; font-weight: 700; }
+.buyrow { display: flex; gap: .6rem; flex-wrap: wrap; align-items: center; margin-top: 1.2rem; }
+.qty { width: 96px; text-align: center; }
+
+/* ---------- Content pages ---------- */
+.page { padding: 2.2rem 0 4rem; max-width: 820px; }
+.page h1 { margin-bottom: 1rem; }
+.prose { white-space: pre-line; }
+.card { background: #fff; border: 1px solid var(--line); border-radius: var(--r-m); padding: 1.3rem; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+details.faq { background: #fff; border: 1px solid var(--line); border-radius: var(--r-s); margin-bottom: .6rem; }
+details.faq summary { cursor: pointer; padding: .9rem 1.1rem; font-weight: 700; }
+details.faq div { padding: 0 1.1rem 1rem; color: var(--mute); white-space: pre-line; }
+.cartrow { display: grid; grid-template-columns: 64px 1fr auto auto; gap: .8rem; align-items: center; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+.cartrow .noimg, .cartrow img { width: 64px; height: 64px; border-radius: var(--r-s); object-fit: cover; }
+.notice { background: #fff8e5; border: 1px solid #f0d58a; color: #5a3d00; padding: .8rem 1rem; border-radius: var(--r-s); font-size: .92rem; margin-bottom: 1rem; }
+
+/* ---------- Footer ---------- */
+#site-footer { background: var(--navy); color: #b9c6dc; padding: 2.6rem 0 1.4rem; margin-top: 2rem; }
+.foot { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2rem; }
+.foot h3 { color: #fff; }
+.foot a:hover { color: #fff; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .35rem; }
+.foot__copy { border-top: 1px solid var(--navy-3); margin-top: 2rem; padding-top: 1rem; font-size: .85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }
+
+/* ---------- Admin ---------- */
+.admin { padding: 1.6rem 0 4rem; }
+.tabs { display: flex; gap: .3rem; border-bottom: 2px solid var(--line); margin-bottom: 1.4rem; overflow-x: auto; }
+.tabs button { background: transparent; border: 0; padding: .7rem 1.1rem; cursor: pointer; font-weight: 700; color: var(--mute); border-bottom: 3px solid transparent; margin-bottom: -2px; white-space: nowrap; }
+.tabs button[aria-selected="true"] { color: var(--navy); border-bottom-color: var(--amber); }
+.tbl-wrap { overflow-x: auto; background: #fff; border: 1px solid var(--line); border-radius: var(--r-s); }
+.tbl { width: 100%; border-collapse: collapse; min-width: 640px; }
+.tbl th, .tbl td { padding: .6rem .8rem; text-align: right; border-bottom: 1px solid var(--line); font-size: .92rem; vertical-align: middle; }
+.tbl th { background: #f0f3f8; }
+.tbl img, .tbl .noimg { width: 44px; height: 44px; object-fit: cover; border-radius: 6px; }
+.row-actions { display: flex; gap: .4rem; }
+.admin-bar { display: flex; gap: .6rem; flex-wrap: wrap; margin-bottom: 1rem; align-items: center; }
+.admin-bar .in { max-width: 320px; }
+dialog { border: 0; border-radius: var(--r-m); padding: 0; width: min(94vw, 720px); max-height: 92vh; box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+dialog::backdrop { background: rgba(10,27,51,.6); }
+dialog form { padding: 1.4rem; }
+dialog .dlg-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+dialog .dlg-foot { display: flex; gap: .6rem; justify-content: flex-start; margin-top: 1rem; position: sticky; bottom: 0; background: #fff; padding-top: .8rem; border-top: 1px solid var(--line); }
+.check { display: flex; gap: .5rem; align-items: center; }
+.thumb { width: 110px; height: 110px; object-fit: cover; border-radius: var(--r-s); border: 1px solid var(--line); }
+.login { max-width: 400px; margin: 4rem auto; }
+.status { font-size: .8rem; padding: .1rem .6rem; border-radius: 99px; background: #e8eefb; color: var(--navy-3); font-weight: 700; }
+.status--new { background: #fff1cf; color: #8a5a00; }
+.status--done { background: #dcf5e4; color: var(--ok); }
+.status--cancelled { background: #eee; color: #666; }
+
+#toasts { position: fixed; bottom: 1rem; inset-inline-start: 1rem; display: grid; gap: .5rem; z-index: 100; }
+.toast { background: var(--navy); color: #fff; padding: .7rem 1.1rem; border-radius: var(--r-s); box-shadow: 0 6px 20px rgba(0,0,0,.25); border-inline-start: 4px solid var(--amber); animation: pop .2s ease-out; }
+.toast--err { border-inline-start-color: #ff6b5e; background: #4a1410; }
+@keyframes pop { from { transform: translateY(8px); opacity: 0; } }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .shop { grid-template-columns: 1fr; }
+  .filters { position: static; display: none; }
+  .filters.open { display: block; }
+  .filters-toggle { display: inline-flex; }
+  .pdetail, .cols, .foot { grid-template-columns: 1fr; }
+  .menu-btn { display: inline-block; }
+  .nav { display: none; position: absolute; inset-inline: 0; top: 68px; background: var(--navy); flex-direction: column; padding: .6rem 1rem 1rem; margin: 0; border-top: 1px solid var(--navy-3); }
+  .nav.open { display: flex; }
+  .search input { width: 120px; }
+}
+@media (max-width: 560px) {
+  .grid2 { grid-template-columns: 1fr; }
+  .search { display: none; }
+  .cartrow { grid-template-columns: 56px 1fr; }
+  .pgrid { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+  .pcard__body { padding: .7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* استایل‌های بخش‌های جدید: ورود، منوی حساب، سفارش‌های من، ویرایش راه‌های ارتباطی */
+
+.loginlink {
+  padding: .5rem .9rem; border: 1.5px solid var(--navy-3); border-radius: var(--r-s);
+  color: #fff; font-weight: 700; font-size: .92rem; white-space: nowrap; transition: background .15s;
+}
+.loginlink:hover { background: var(--navy-2); }
+
+.acct { position: relative; }
+.acct summary {
+  list-style: none; cursor: pointer; padding: .5rem .9rem; border: 1.5px solid var(--navy-3);
+  border-radius: var(--r-s); font-size: .9rem; max-width: 190px; overflow: hidden;
+  text-overflow: ellipsis; white-space: nowrap; direction: ltr;
+}
+.acct summary::-webkit-details-marker { display: none; }
+.acct summary:hover, .acct[open] summary { background: var(--navy-2); }
+.acct__menu {
+  position: absolute; inset-inline-end: 0; top: calc(100% + 6px); min-width: 190px; z-index: 40;
+  background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: var(--r-m);
+  box-shadow: 0 12px 30px rgba(10, 27, 51, .22); padding: .4rem; display: grid;
+}
+.acct__menu a, .acct__menu button {
+  text-align: right; background: transparent; border: 0; padding: .55rem .8rem;
+  border-radius: var(--r-s); cursor: pointer; font-weight: 600; color: inherit;
+}
+.acct__menu a:hover, .acct__menu button:hover { background: var(--paper); }
+
+.auth { max-width: 440px; margin-block: 3rem 4rem; }
+.auth__tabs { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid var(--line); margin-bottom: 1.2rem; }
+.auth__tabs button {
+  background: transparent; border: 0; padding: .7rem; cursor: pointer; font-weight: 700;
+  color: var(--mute); border-bottom: 3px solid transparent; margin-bottom: -2px;
+}
+.auth__tabs button[aria-selected="true"] { color: var(--navy); border-bottom-color: var(--amber); }
+
+.hint { color: var(--mute); font-size: .9rem; }
+.notice.err { background: #fde7e5; border-color: #f3b7b1; color: #7a1b12; }
+.gate { text-align: center; }
+
+.order { margin-bottom: .8rem; }
+.order__head { display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-wrap: wrap; margin-bottom: .5rem; color: var(--mute); font-size: .92rem; }
+.order__items { margin: 0; padding-inline-start: 1.2rem; }
+
+.xrow { display: grid; grid-template-columns: 1fr 1.3fr 1.5fr auto; gap: .5rem; margin-bottom: .6rem; }
+
+@media (max-width: 900px) {
+  .acct__menu { inset-inline-end: auto; inset-inline-start: 0; }
+}
+@media (max-width: 700px) {
+  .xrow { grid-template-columns: 1fr 1fr; }
+  .xrow input:nth-child(3), .xrow .btn { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .loginlink { padding: .45rem .6rem; font-size: .82rem; }
+  .acct summary { max-width: 110px; padding: .45rem .6rem; }
+  .cartlink { padding: .45rem .6rem; font-size: .82rem; }
+}
+
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">رفتن به محتوای اصلی</a>
+  <div id="demo-banner" hidden></div>
+  <header id="site-header"></header>
+  <main id="main" tabindex="-1"><p class="loading">در حال بارگذاری…</p></main>
+  <footer id="site-footer"></footer>
+  <noscript><p style="padding:2rem;text-align:center">برای استفاده از سایت، جاوااسکریپت مرورگر باید فعال باشد.</p></noscript>
+  <script type="module">
+const __config = (() => {
+// تنظیمات اتصال به Supabase
+// فقط «Project URL» و کلید «publishable» اینجا هستند. این کلید عمومی است و امنیت با سیاست‌های schema.sql تأمین می‌شود.
+// هرگز کلید «secret» یا «service_role» را اینجا یا هر جای دیگر سایت نگذارید.
+const CONFIG = {
+  SUPABASE_URL: "https://oqtivnyhwegkavwedugq.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_7fgUHmpWtP_2zByN-WHyyA_OyDGe1rA",
+  IMAGE_BUCKET: "product-images",
+  MAX_IMAGE_MB: 2,
+};
+
+return { CONFIG };
+})();
+
+const __utils = (() => {
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ESC[c]);
+
+const nf = new Intl.NumberFormat("fa-IR");
+const fa = (n) => nf.format(Number(n) || 0);
+
+const STOCK = {
+  available: "موجود",
+  unavailable: "ناموجود",
+  call: "تماس بگیرید",
+};
+
+// تبدیل ارقام فارسی/عربی به انگلیسی (برای اعتبارسنجی شماره تلفن و اعداد)
+function toLatinDigits(s) {
+  return String(s ?? "")
+    .replace(/[۰-۹]/g, (d) => "۰۱۲۳۴۵۶۷۸۹".indexOf(d))
+    .replace(/[٠-٩]/g, (d) => "٠١٢٣٤٥٦٧٨٩".indexOf(d));
+}
+
+function toNumber(s) {
+  const v = toLatinDigits(s).replace(/[,،\s]/g, "");
+  if (v === "") return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+function finalPrice(p) {
+  if (p.price == null) return null;
+  const d = Math.min(Math.max(Number(p.discount_percent) || 0, 0), 100);
+  return Math.round((Number(p.price) * (100 - d)) / 100);
+}
+
+function priceHTML(p) {
+  if (p.stock_status === "call" || p.price == null) {
+    return `<span class="price price--call">استعلام قیمت</span>`;
+  }
+  const fp = finalPrice(p);
+  const old = p.discount_percent > 0 ? `<s class="price__old">${fa(p.price)}</s>` : "";
+  return `<span class="price">${old}<b>${fa(fp)}</b> <small>تومان</small></span>`;
+}
+
+// فقط آدرس‌های http(s) برای تصویر مجاز است
+function safeUrl(u) {
+  if (typeof u !== "string" || !u.trim()) return "";
+  if (/^data:image\/(png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(u)) return u; // فقط حالت نمایشی
+  try {
+    const x = new URL(u);
+    return ["http:", "https:"].includes(x.protocol) ? x.href : "";
+  } catch {
+    return "";
+  }
+}
+
+function toast(msg, type = "ok") {
+  let box = $("#toasts");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "toasts";
+    box.setAttribute("role", "status");
+    box.setAttribute("aria-live", "polite");
+    document.body.appendChild(box);
+  }
+  const t = document.createElement("div");
+  t.className = `toast toast--${type}`;
+  t.textContent = msg;
+  box.appendChild(t);
+  setTimeout(() => t.remove(), 3800);
+}
+
+const PLACEHOLDER_SVG = `<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="20" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="32" r="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M32 12v8M32 44v8M12 32h8M44 32h8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>`;
+
+function productImage(p, cls = "") {
+  const src = safeUrl(p.image_url);
+  return src
+    ? `<img class="${cls}" src="${esc(src)}" alt="${esc(p.name)}" loading="lazy" decoding="async">`
+    : `<div class="noimg ${cls}" role="img" aria-label="بدون تصویر">${PLACEHOLDER_SVG}</div>`;
+}
+
+function debounce(fn, ms = 250) {
+  let t;
+  return (...a) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn(...a), ms);
+  };
+}
+
+function validPhone(raw) {
+  const v = toLatinDigits(raw).replace(/[\s\-()+]/g, "");
+  return /^(0|98)?\d{8,11}$/.test(v);
+}
+
+return { $, $$, esc, fa, STOCK, toLatinDigits, toNumber, finalPrice, priceHTML, safeUrl, toast, PLACEHOLDER_SVG, productImage, debounce, validPhone };
+})();
+
+const __db = await (async () => {
+const {CONFIG} = __config;
+const demo = !CONFIG.SUPABASE_URL || !CONFIG.SUPABASE_ANON_KEY;
+
+let sb = null;
+if (!demo) {
+  const { createClient } = await import("https://esm.sh/@supabase/supabase-js@2");
+  sb = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY, {
+    // pkce: لینک تأیید ایمیل با «?code=» برمی‌گردد و با مسیریاب # سایت تداخل ندارد
+    auth: { persistSession: true, autoRefreshToken: true, flowType: "pkce" },
+  });
+}
+
+/* ---------------- حالت نمایشی (فقط برای پیش‌نمایش، داده‌ها در مرورگر می‌مانند) ---------------- */
+const DEMO_KEY = "pn_demo_v1";
+const uid = () => (crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()));
+
+function demoLoad() {
+  try {
+    const raw = localStorage.getItem(DEMO_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch {}
+  const cats = ["موتور", "ترمز", "تعلیق و جلوبندی", "فیلتر", "برق و روشنایی"].map((name, i) => ({
+    id: uid(), name, sort_order: i,
+  }));
+  const brands = ["برند نمونه الف", "برند نمونه ب"].map((name) => ({ id: uid(), name }));
+  const mk = (name, sku, c, b, price, stock) => ({
+    id: uid(), name, sku, description: "این یک محصول آزمایشی برای پیش‌نمایش است و اطلاعات واقعی شرکت نیست.",
+    specs: [], category_id: cats[c].id, brand_id: brands[b].id, vehicle: "", price,
+    wholesale_price: null, min_order: 1, discount_percent: 0, stock_status: stock,
+    image_url: "", published: true, created_at: new Date().toISOString(),
+  });
+  const data = {
+    categories: cats, brands,
+    products: [
+      mk("نمونه آزمایشی – فیلتر روغن", "DEMO-001", 3, 0, 120000, "available"),
+      mk("نمونه آزمایشی – لنت ترمز جلو", "DEMO-002", 1, 1, 450000, "available"),
+      mk("نمونه آزمایشی – بوش تعلیق", "DEMO-003", 2, 0, null, "call"),
+      mk("نمونه آزمایشی – لامپ هدلایت", "DEMO-004", 4, 1, 85000, "unavailable"),
+    ],
+    settings: {}, inquiries: [],
+  };
+  localStorage.setItem(DEMO_KEY, JSON.stringify(data));
+  return data;
+}
+const demoSave = (d) => localStorage.setItem(DEMO_KEY, JSON.stringify(d));
+
+/* ---------------- API مشترک ---------------- */
+const fail = (error) => {
+  if (error) throw new Error(error.message || "خطای پایگاه داده");
+};
+
+async function getAll(table, { publishedOnly = false, order = "created_at", asc = false } = {}) {
+  if (demo) {
+    let rows = [...demoLoad()[table]];
+    if (publishedOnly && table === "products") rows = rows.filter((r) => r.published);
+    return rows;
+  }
+  let q = sb.from(table).select("*").order(order, { ascending: asc });
+  if (publishedOnly && table === "products") q = q.eq("published", true);
+  const { data, error } = await q.limit(1000);
+  fail(error);
+  return data || [];
+}
+
+async function getSettings() {
+  if (demo) return demoLoad().settings;
+  const { data, error } = await sb.from("site_settings").select("key,value");
+  fail(error);
+  return Object.fromEntries((data || []).map((r) => [r.key, r.value]));
+}
+
+async function saveSettings(obj) {
+  if (demo) {
+    const d = demoLoad();
+    d.settings = { ...d.settings, ...obj };
+    return demoSave(d);
+  }
+  const rows = Object.entries(obj).map(([key, value]) => ({ key, value: String(value ?? "") }));
+  const { error } = await sb.from("site_settings").upsert(rows);
+  fail(error);
+}
+
+/* راه‌های ارتباطی اضافه (هر مورد: عنوان، متن نمایشی، لینک اختیاری) */
+function parseExtras(json) {
+  try {
+    const a = JSON.parse(json || "[]");
+    if (!Array.isArray(a)) return [];
+    return a
+      .filter((x) => x && x.label && x.value)
+      .slice(0, 12)
+      .map((x) => ({
+        label: String(x.label).slice(0, 40),
+        value: String(x.value).slice(0, 120),
+        url: String(x.url || "").slice(0, 300),
+      }));
+  } catch {
+    return [];
+  }
+}
+
+async function upsert(table, row) {
+  if (demo) {
+    const d = demoLoad();
+    const list = d[table];
+    if (row.id) {
+      const i = list.findIndex((r) => r.id === row.id);
+      if (i >= 0) list[i] = { ...list[i], ...row };
+      else list.push(row);
+    } else {
+      list.push({ ...row, id: uid(), created_at: new Date().toISOString() });
+    }
+    return demoSave(d);
+  }
+  const { error } = await sb.from(table).upsert(row);
+  fail(error);
+}
+
+async function remove(table, id) {
+  if (demo) {
+    const d = demoLoad();
+    d[table] = d[table].filter((r) => r.id !== id);
+    return demoSave(d);
+  }
+  const { error } = await sb.from(table).delete().eq("id", id);
+  fail(error);
+}
+
+/* ---------------- حساب کاربری ---------------- */
+function authMsg(error) {
+  const m = String(error?.message || "").toLowerCase();
+  if (m.includes("invalid login")) return "ایمیل یا گذرواژه نادرست است.";
+  if (m.includes("not confirmed")) return "ایمیل هنوز تأیید نشده است. لینک تأیید را در ایمیل خود باز کنید.";
+  if (m.includes("already registered")) return "این ایمیل قبلاً ثبت‌نام کرده است. وارد شوید.";
+  if (m.includes("password")) return "گذرواژه باید حداقل ۸ نویسه باشد.";
+  if (m.includes("rate limit") || m.includes("too many")) return "تعداد تلاش‌ها زیاد بود. چند دقیقه بعد دوباره امتحان کنید.";
+  if (m.includes("valid email") || m.includes("invalid email")) return "ایمیل معتبر نیست.";
+  return "انجام نشد. اتصال اینترنت را بررسی کنید و دوباره تلاش کنید.";
+}
+
+async function getUser() {
+  if (demo) return null;
+  const { data } = await sb.auth.getSession();
+  const u = data.session?.user;
+  return u ? { id: u.id, email: u.email } : null;
+}
+
+async function signIn(email, password) {
+  if (demo) throw new Error("ورود در حالت نمایشی فعال نیست.");
+  const { error } = await sb.auth.signInWithPassword({ email, password });
+  if (error) {
+    console.error(error);
+    throw new Error(authMsg(error));
+  }
+}
+
+async function signUp(email, password) {
+  if (demo) throw new Error("ثبت‌نام در حالت نمایشی فعال نیست.");
+  const { data, error } = await sb.auth.signUp({
+    email, password,
+    options: { emailRedirectTo: location.origin + location.pathname },
+  });
+  if (error) {
+    console.error(error);
+    throw new Error(authMsg(error));
+  }
+  // ایمیل قبلاً ثبت‌شده: Supabase خطا نمی‌دهد ولی identities خالی است
+  if (data.user && Array.isArray(data.user.identities) && data.user.identities.length === 0) {
+    throw new Error("این ایمیل قبلاً ثبت‌نام کرده است. وارد شوید.");
+  }
+  return { needsConfirm: !data.session };
+}
+
+async function signOut() {
+  if (!demo) await sb.auth.signOut();
+}
+
+function onAuthChange(cb) {
+  if (demo) return;
+  // اجرای تأخیری: داخل callback نباید مستقیماً به Supabase درخواست زد
+  sb.auth.onAuthStateChange(() => setTimeout(cb, 0));
+}
+
+async function isAdmin() {
+  if (demo) return true;
+  const u = await getUser();
+  if (!u) return false;
+  const { data, error } = await sb.rpc("is_admin");
+  return !error && data === true;
+}
+
+/* انتقال مدیریت */
+async function getOwnerEmail() {
+  if (demo) return "";
+  const { data, error } = await sb.rpc("owner_email");
+  fail(error);
+  return data || "";
+}
+
+async function transferOwnership(email) {
+  if (demo) throw new Error("انتقال مدیریت در حالت نمایشی ممکن نیست.");
+  const { error } = await sb.rpc("transfer_ownership", { new_email: email });
+  fail(error);
+}
+
+/* ---------------- درخواست‌های خرید ---------------- */
+async function createInquiry(row) {
+  if (demo) {
+    const d = demoLoad();
+    d.inquiries.unshift({ ...row, id: uid(), status: "new", created_at: new Date().toISOString() });
+    return demoSave(d);
+  }
+  const u = await getUser();
+  // بدون .select(): کاربر عادی فقط درخواست‌های خودش را می‌خواند
+  const { error } = await sb.from("inquiries").insert({ ...row, user_id: u ? u.id : null });
+  fail(error);
+}
+
+async function listInquiries() {
+  if (demo) return demoLoad().inquiries;
+  const { data, error } = await sb.from("inquiries").select("*").order("created_at", { ascending: false }).limit(500);
+  fail(error);
+  return data || [];
+}
+
+async function listMyInquiries() {
+  if (demo) return [];
+  const u = await getUser();
+  if (!u) return [];
+  const { data, error } = await sb
+    .from("inquiries").select("*").eq("user_id", u.id)
+    .order("created_at", { ascending: false }).limit(200);
+  fail(error);
+  return data || [];
+}
+
+async function setInquiryStatus(id, status) {
+  if (demo) {
+    const d = demoLoad();
+    const r = d.inquiries.find((x) => x.id === id);
+    if (r) r.status = status;
+    return demoSave(d);
+  }
+  const { error } = await sb.from("inquiries").update({ status }).eq("id", id);
+  fail(error);
+}
+
+/* ---------------- تصاویر ---------------- */
+async function uploadImage(file) {
+  const okTypes = ["image/jpeg", "image/png", "image/webp"];
+  if (!okTypes.includes(file.type)) throw new Error("فقط تصویر JPG، PNG یا WebP مجاز است.");
+  if (file.size > CONFIG.MAX_IMAGE_MB * 1024 * 1024) {
+    throw new Error(`حجم تصویر باید کمتر از ${CONFIG.MAX_IMAGE_MB} مگابایت باشد.`);
+  }
+  if (demo) {
+    return new Promise((res, rej) => {
+      const r = new FileReader();
+      r.onload = () => res(r.result);
+      r.onerror = () => rej(new Error("خواندن فایل ناموفق بود."));
+      r.readAsDataURL(file);
+    });
+  }
+  const ext = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp" }[file.type];
+  const path = `${uid()}.${ext}`;
+  const { error } = await sb.storage.from(CONFIG.IMAGE_BUCKET).upload(path, file, {
+    cacheControl: "31536000", upsert: false, contentType: file.type,
+  });
+  fail(error);
+  return sb.storage.from(CONFIG.IMAGE_BUCKET).getPublicUrl(path).data.publicUrl;
+}
+
+async function deleteImage(url) {
+  if (demo || !url) return;
+  const marker = `/${CONFIG.IMAGE_BUCKET}/`;
+  const i = url.indexOf(marker);
+  if (i < 0) return;
+  await sb.storage.from(CONFIG.IMAGE_BUCKET).remove([url.slice(i + marker.length)]);
+}
+
+return { demo, getAll, getSettings, saveSettings, parseExtras, upsert, remove, getUser, signIn, signUp, signOut, onAuthChange, isAdmin, getOwnerEmail, transferOwnership, createInquiry, listInquiries, listMyInquiries, setInquiryStatus, uploadImage, deleteImage };
+})();
+
+const __account = (() => {
+const {signIn, signUp, listMyInquiries} = __db;
+const {$, $$, esc, fa, toast} = __utils;
+const STATUS = { new: "جدید", in_progress: "در حال بررسی", done: "انجام شد", cancelled: "لغو شد" };
+
+/* ---------------- ورود / ثبت‌نام مشتری ---------------- */
+function loginView(main, { next = "", onDone } = {}) {
+  document.title = "ورود / ثبت‌نام";
+  const target = /^[a-z]{1,20}$/.test(next) ? next : "";
+  let mode = "in";
+
+  const draw = () => {
+    main.innerHTML = `
+    <div class="wrap auth">
+      <div class="card">
+        <div class="auth__tabs" role="tablist">
+          <button type="button" role="tab" data-mode="in" aria-selected="${mode === "in"}">ورود</button>
+          <button type="button" role="tab" data-mode="up" aria-selected="${mode === "up"}">ثبت‌نام</button>
+        </div>
+        ${target === "cart" ? `<p class="notice">برای ثبت درخواست خرید اول وارد شوید. فهرست درخواست شما حفظ می‌شود.</p>` : ""}
+        <form id="auth" novalidate>
+          <div class="field"><label for="a-email">ایمیل</label>
+            <input class="in" id="a-email" type="email" dir="ltr" autocomplete="email" required></div>
+          <div class="field"><label for="a-pass">گذرواژه</label>
+            <input class="in" id="a-pass" type="password" dir="ltr" autocomplete="${mode === "in" ? "current-password" : "new-password"}" required>
+            ${mode === "up" ? `<small>حداقل ۸ نویسه</small>` : ""}</div>
+          ${mode === "up" ? `<div class="field"><label for="a-pass2">تکرار گذرواژه</label>
+            <input class="in" id="a-pass2" type="password" dir="ltr" autocomplete="new-password" required></div>` : ""}
+          <p id="a-msg" class="notice err" style="display:none" role="alert"></p>
+          <button class="btn" type="submit" style="width:100%">${mode === "in" ? "ورود" : "ساخت حساب"}</button>
+        </form>
+      </div>
+    </div>`;
+
+    $$("[data-mode]", main).forEach((b) => (b.onclick = () => { mode = b.dataset.mode; draw(); }));
+
+    $("#auth").onsubmit = async (e) => {
+      e.preventDefault();
+      const msg = $("#a-msg");
+      const show = (t) => { msg.textContent = t; msg.style.display = "block"; };
+      const email = $("#a-email").value.trim().toLowerCase();
+      const pass = $("#a-pass").value;
+      if (!/^\S+@\S+\.\S+$/.test(email)) return show("ایمیل معتبر نیست.");
+      if (mode === "up") {
+        if (pass.length < 8) return show("گذرواژه باید حداقل ۸ نویسه باشد.");
+        if (pass !== $("#a-pass2").value) return show("تکرار گذرواژه با گذرواژه یکسان نیست.");
+      } else if (!pass) {
+        return show("گذرواژه را وارد کنید.");
+      }
+      const btn = $("button[type=submit]", e.target);
+      btn.disabled = true;
+      try {
+        if (mode === "in") {
+          await signIn(email, pass);
+          toast("وارد شدید.");
+          await onDone?.(target);
+        } else {
+          const { needsConfirm } = await signUp(email, pass);
+          if (needsConfirm) {
+            main.innerHTML = `
+            <div class="wrap auth"><div class="card" style="text-align:center">
+              <h1 style="font-size:1.4rem">ایمیل خود را بررسی کنید</h1>
+              <p>لینک تأیید برای <b dir="ltr">${esc(email)}</b> فرستاده شد. بعد از باز کردن لینک، با همین ایمیل و گذرواژه وارد شوید.</p>
+              <p class="hint">اگر ایمیل را نمی‌بینید، پوشه‌ی هرزنامه (Spam) را هم نگاه کنید.</p>
+              <a class="btn" href="#/login${target ? `?next=${target}` : ""}">رفتن به صفحه ورود</a>
+            </div></div>`;
+          } else {
+            toast("حساب شما ساخته شد.");
+            await onDone?.(target);
+          }
+        }
+      } catch (ex) {
+        show(ex.message);
+        btn.disabled = false;
+      }
+    };
+  };
+  draw();
+}
+
+/* ---------------- سفارش‌های من ---------------- */
+async function ordersView(main, user) {
+  document.title = "سفارش‌های من";
+  if (!user) { location.hash = "#/login?next=orders"; return; }
+  main.innerHTML = `<p class="loading">در حال دریافت درخواست‌ها…</p>`;
+  let rows = [];
+  try {
+    rows = await listMyInquiries();
+  } catch (ex) {
+    console.error(ex);
+    main.innerHTML = `<div class="wrap page"><p class="notice">دریافت درخواست‌ها انجام نشد. دوباره تلاش کنید.</p></div>`;
+    return;
+  }
+  main.innerHTML = `
+  <div class="wrap page">
+    <h1>سفارش‌های من</h1>
+    <p class="hint">حساب: <b dir="ltr">${esc(user.email)}</b></p>
+    ${rows.length ? rows.map((q) => `
+      <section class="card order">
+        <div class="order__head">
+          <span>${esc(new Date(q.created_at).toLocaleString("fa-IR"))}</span>
+          <span class="status status--${esc(q.status)}">${esc(STATUS[q.status] || q.status)}</span>
+        </div>
+        ${(q.items || []).length ? `<ul class="order__items">${q.items.map((i) =>
+          `<li>${esc(i.name)} <small dir="ltr">(${esc(i.sku)})</small> × ${fa(i.qty)}</li>`).join("")}</ul>` : ""}
+        ${q.message ? `<p class="prose" style="color:var(--mute);margin:.5rem 0 0">${esc(q.message)}</p>` : ""}
+      </section>`).join("")
+      : `<p class="empty">هنوز درخواستی ثبت نکرده‌اید. <a href="#/shop" style="text-decoration:underline">محصولات را ببینید</a>.</p>`}
+  </div>`;
+}
+
+return { loginView, ordersView };
+})();
+
+const __admin = (() => {
+const {demo, getAll, getSettings, saveSettings, upsert, remove, listInquiries, setInquiryStatus, uploadImage, deleteImage, signOut, isAdmin, getUser, getOwnerEmail, transferOwnership, parseExtras,} = __db;
+const {$, $$, esc, fa, STOCK, toNumber, toLatinDigits, toast, safeUrl, productImage, PLACEHOLDER_SVG} = __utils;
+let root;
+let tab = "products";
+const A = { products: [], categories: [], brands: [], settings: {}, inquiries: [] };
+
+const STATUS = { new: "جدید", in_progress: "در حال بررسی", done: "انجام شد", cancelled: "لغو شد" };
+
+async function adminView(main, _sub) {
+  root = main;
+  document.title = "پنل مدیریت";
+  if (!demo) {
+    const user = await getUser();
+    if (!user) { location.hash = "#/login?next=admin"; return; }
+    if (!(await isAdmin())) return noAccess(user);
+  }
+  await panel();
+}
+
+/* ---------------- حساب بدون دسترسی ---------------- */
+function noAccess(user) {
+  root.innerHTML = `
+  <div class="wrap auth">
+    <div class="card" style="text-align:center">
+      <h1 style="font-size:1.4rem">دسترسی ندارید</h1>
+      <p>حساب <b dir="ltr">${esc(user.email)}</b> اجازه‌ی ورود به پنل مدیریت را ندارد. فقط مدیر کل سایت می‌تواند وارد شود.</p>
+      <a class="btn" href="#/">بازگشت به سایت</a>
+      <button class="btn btn--ghost" id="na-out" style="margin-inline-start:.5rem">خروج از حساب</button>
+    </div>
+  </div>`;
+  $("#na-out").onclick = async () => { await signOut(); location.hash = "#/login?next=admin"; };
+}
+
+/* ---------------- چارچوب پنل ---------------- */
+async function loadAll() {
+  const [products, categories, brands, settings] = await Promise.all([
+    getAll("products"),
+    getAll("categories", { order: "sort_order", asc: true }),
+    getAll("brands", { order: "name", asc: true }),
+    getSettings(),
+  ]);
+  Object.assign(A, { products, categories, brands, settings });
+}
+
+async function panel() {
+  root.innerHTML = `<p class="loading">در حال دریافت اطلاعات…</p>`;
+  try {
+    await loadAll();
+  } catch (ex) {
+    root.innerHTML = `<div class="wrap page"><p class="notice">${esc(ex.message)}</p></div>`;
+    return;
+  }
+  root.innerHTML = `
+  <div class="wrap admin">
+    <div class="admin-bar" style="justify-content:space-between">
+      <h1 style="font-size:1.5rem;margin:0">پنل مدیریت</h1>
+      <div class="row-actions"><a class="btn btn--ghost btn--sm" href="#/">مشاهده سایت</a>
+        ${demo ? "" : `<button class="btn btn--navy btn--sm" id="logout">خروج</button>`}</div>
+    </div>
+    <div class="tabs" role="tablist">
+      ${[["products", "محصولات"], ["taxo", "دسته‌بندی‌ها و برندها"], ["inquiries", "درخواست‌ها"], ["settings", "تنظیمات و تماس"], ["owner", "مالکیت و دسترسی"]]
+        .map(([k, l]) => `<button role="tab" data-tab="${k}" aria-selected="${tab === k}">${l}</button>`).join("")}
+    </div>
+    <div id="tabbody"></div>
+  </div>`;
+  $("#logout")?.addEventListener("click", async () => { await signOut(); location.hash = "#/"; });
+  $$("[data-tab]").forEach((b) => (b.onclick = () => { tab = b.dataset.tab; panel(); }));
+  const body = $("#tabbody");
+  if (tab === "products") productsTab(body);
+  else if (tab === "taxo") taxoTab(body);
+  else if (tab === "inquiries") await inquiriesTab(body);
+  else if (tab === "owner") await ownerTab(body);
+  else settingsTab(body);
+}
+
+const guard = (fn) => async (...a) => {
+  try { await fn(...a); } catch (ex) { console.error(ex); toast(ex.message || "خطا", "err"); }
+};
+
+/* ---------------- محصولات ---------------- */
+function productsTab(body) {
+  body.innerHTML = `
+    <div class="admin-bar">
+      <button class="btn" id="new-p">افزودن محصول</button>
+      <input class="in" id="p-search" type="search" placeholder="جست‌وجو در نام یا کد کالا" aria-label="جست‌وجو در محصولات">
+      <span style="color:var(--mute)" id="p-count"></span>
+    </div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th></th><th>محصول</th><th>برند / دسته</th><th>قیمت (تومان)</th><th>موجودی</th><th>وضعیت</th><th></th></tr></thead><tbody id="p-body"></tbody></table></div>`;
+  const draw = () => {
+    const q = toLatinDigits($("#p-search").value).toLowerCase().trim();
+    const list = A.products.filter((p) => !q || `${p.name} ${p.sku}`.toLowerCase().includes(q));
+    $("#p-count").textContent = `${fa(list.length)} محصول`;
+    $("#p-body").innerHTML = list.length ? list.map((p) => `
+      <tr>
+        <td>${productImage(p)}</td>
+        <td><b>${esc(p.name)}</b><br><small dir="ltr" style="color:var(--mute)">${esc(p.sku)}</small></td>
+        <td>${esc([A.brands.find((b) => b.id === p.brand_id)?.name, A.categories.find((c) => c.id === p.category_id)?.name].filter(Boolean).join(" / "))}</td>
+        <td>${p.price == null ? "—" : fa(p.price)}${p.discount_percent ? `<br><small>${fa(p.discount_percent)}٪ تخفیف</small>` : ""}</td>
+        <td>${STOCK[p.stock_status]}</td>
+        <td><span class="status ${p.published ? "status--done" : "status--cancelled"}">${p.published ? "منتشر شده" : "غیرفعال"}</span></td>
+        <td><div class="row-actions">
+          <button class="btn btn--sm btn--navy" data-edit="${esc(p.id)}">ویرایش</button>
+          <button class="btn btn--sm btn--ghost" data-toggle="${esc(p.id)}">${p.published ? "غیرفعال" : "انتشار"}</button>
+          <button class="btn btn--sm btn--danger" data-del="${esc(p.id)}">حذف</button>
+        </div></td>
+      </tr>`).join("") : `<tr><td colspan="7" class="empty">محصولی ثبت نشده است. با «افزودن محصول» شروع کنید.</td></tr>`;
+  };
+  draw();
+  $("#p-search").oninput = draw;
+  $("#new-p").onclick = () => productDialog();
+  $("#p-body").onclick = guard(async (e) => {
+    const id = e.target.dataset.edit || e.target.dataset.toggle || e.target.dataset.del;
+    if (!id) return;
+    const p = A.products.find((x) => x.id === id);
+    if (e.target.dataset.edit) return productDialog(p);
+    if (e.target.dataset.toggle) {
+      await upsert("products", { id, published: !p.published });
+      toast(p.published ? "محصول غیرفعال شد." : "محصول منتشر شد.");
+      return panel();
+    }
+    if (confirm(`محصول «${p.name}» برای همیشه حذف شود؟ این کار قابل بازگشت نیست.`)) {
+      await remove("products", id);
+      await deleteImage(p.image_url).catch(() => {});
+      toast("محصول حذف شد.");
+      panel();
+    }
+  });
+}
+
+function specsToText(specs) {
+  return (Array.isArray(specs) ? specs : []).map((r) => `${r.k}: ${r.v}`).join("\n");
+}
+function textToSpecs(t) {
+  return t.split("\n").map((l) => l.trim()).filter(Boolean).slice(0, 60).map((l) => {
+    const i = l.search(/[:：]/);
+    return i < 0 ? { k: l, v: "" } : { k: l.slice(0, i).trim(), v: l.slice(i + 1).trim() };
+  });
+}
+
+function productDialog(p = null) {
+  const isNew = !p;
+  p = p || { stock_status: "available", published: true, featured: false, min_order: 1, discount_percent: 0, specs: [] };
+  let newFile = null, removeImage = false;
+  const sel = (items, val) => `<option value="">— بدون انتخاب —</option>${items.map((x) => `<option value="${esc(x.id)}" ${x.id === val ? "selected" : ""}>${esc(x.name)}</option>`).join("")}`;
+  const dlg = document.createElement("dialog");
+  dlg.innerHTML = `
+  <form method="dialog" novalidate>
+    <div class="dlg-head"><h2 style="margin:0">${isNew ? "محصول جدید" : "ویرایش محصول"}</h2><button type="button" class="btn btn--ghost btn--sm" data-close aria-label="بستن">بستن</button></div>
+    <div class="field"><label for="d-name">نام محصول *</label><input class="in" id="d-name" maxlength="200" value="${esc(p.name)}"></div>
+    <div class="grid2">
+      <div class="field"><label for="d-sku">کد کالا</label><input class="in" id="d-sku" dir="ltr" maxlength="60" value="${esc(p.sku)}"></div>
+      <div class="field"><label for="d-vehicle">خودرو (مثلاً پژو ۲۰۶)</label><input class="in" id="d-vehicle" maxlength="120" value="${esc(p.vehicle)}"></div>
+      <div class="field"><label for="d-cat">دسته‌بندی</label><select class="in" id="d-cat">${sel(A.categories, p.category_id)}</select></div>
+      <div class="field"><label for="d-brand">برند</label><select class="in" id="d-brand">${sel(A.brands, p.brand_id)}</select></div>
+      <div class="field"><label for="d-price">قیمت (تومان)</label><input class="in" id="d-price" inputmode="numeric" value="${p.price ?? ""}"><small>خالی بگذارید تا «استعلام قیمت» نمایش داده شود.</small></div>
+      <div class="field"><label for="d-wprice">قیمت عمده (تومان)</label><input class="in" id="d-wprice" inputmode="numeric" value="${p.wholesale_price ?? ""}"></div>
+      <div class="field"><label for="d-min">حداقل تعداد سفارش</label><input class="in" id="d-min" inputmode="numeric" value="${p.min_order ?? 1}"></div>
+      <div class="field"><label for="d-disc">تخفیف (درصد)</label><input class="in" id="d-disc" inputmode="numeric" value="${p.discount_percent ?? 0}"></div>
+      <div class="field"><label for="d-stock">وضعیت موجودی</label><select class="in" id="d-stock">${Object.entries(STOCK).map(([k, v]) => `<option value="${k}" ${k === p.stock_status ? "selected" : ""}>${v}</option>`).join("")}</select></div>
+    </div>
+    <div class="field"><label for="d-desc">توضیحات</label><textarea class="in" id="d-desc" maxlength="5000">${esc(p.description)}</textarea></div>
+    <div class="field"><label for="d-specs">مشخصات فنی</label><textarea class="in" id="d-specs">${esc(specsToText(p.specs))}</textarea><small>هر مشخصه در یک خط، به شکل «عنوان: مقدار»</small></div>
+    <div class="field"><label>تصویر محصول</label>
+      <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+        <div id="d-prev">${safeUrl(p.image_url) ? `<img class="thumb" src="${esc(safeUrl(p.image_url))}" alt="">` : `<div class="noimg thumb">${PLACEHOLDER_SVG}</div>`}</div>
+        <div><input type="file" id="d-file" accept="image/jpeg,image/png,image/webp"><br>
+        <button type="button" class="btn btn--ghost btn--sm" id="d-rm" style="margin-top:.4rem">حذف تصویر</button></div>
+      </div><small>JPG، PNG یا WebP؛ حداکثر ۲ مگابایت. فقط تصویر واقعی محصول را بارگذاری کنید.</small>
+    </div>
+    <label class="check"><input type="checkbox" id="d-pub" ${p.published ? "checked" : ""}> منتشر شود</label>
+    <label class="check" style="margin-top:.4rem"><input type="checkbox" id="d-feat" ${p.featured ? "checked" : ""}> نمایش در محصولات منتخب صفحه اصلی</label>
+    <p id="d-err" class="notice" style="display:none;background:#fde7e5;margin-top:1rem" role="alert"></p>
+    <div class="dlg-foot"><button type="submit" class="btn" id="d-save">ذخیره</button><button type="button" class="btn btn--ghost" data-close>انصراف</button></div>
+  </form>`;
+  document.body.appendChild(dlg);
+  dlg.showModal();
+  const close = () => { dlg.close(); dlg.remove(); };
+  dlg.addEventListener("cancel", () => setTimeout(() => dlg.remove(), 0));
+  $$("[data-close]", dlg).forEach((b) => (b.onclick = close));
+  $("#d-file", dlg).onchange = (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    newFile = f; removeImage = false;
+    $("#d-prev", dlg).innerHTML = `<img class="thumb" alt="" src="${URL.createObjectURL(f)}">`;
+  };
+  $("#d-rm", dlg).onclick = () => {
+    newFile = null; removeImage = true; $("#d-file", dlg).value = "";
+    $("#d-prev", dlg).innerHTML = `<div class="noimg thumb">${PLACEHOLDER_SVG}</div>`;
+  };
+  $("form", dlg).onsubmit = guard(async (e) => {
+    e.preventDefault();
+    const err = $("#d-err", dlg);
+    const fail = (m) => { err.textContent = m; err.style.display = "block"; };
+    const v = (id) => $(id, dlg).value.trim();
+    const name = v("#d-name");
+    if (!name) return fail("نام محصول را وارد کنید.");
+    const num = (id, label, { int = true, min = 0, max = Infinity, nullable = false } = {}) => {
+      const raw = v(id);
+      if (raw === "" && nullable) return null;
+      const n = toNumber(raw);
+      if (n == null || n < min || n > max || (int && !Number.isInteger(n))) throw new Error(`«${label}» معتبر نیست.`);
+      return n;
+    };
+    let row;
+    try {
+      row = {
+        name, sku: v("#d-sku"), description: v("#d-desc"), specs: textToSpecs(v("#d-specs")),
+        category_id: v("#d-cat") || null, brand_id: v("#d-brand") || null, vehicle: v("#d-vehicle"),
+        price: num("#d-price", "قیمت", { nullable: true }),
+        wholesale_price: num("#d-wprice", "قیمت عمده", { nullable: true }),
+        min_order: num("#d-min", "حداقل تعداد سفارش", { min: 1 }),
+        discount_percent: num("#d-disc", "تخفیف", { max: 100 }),
+        stock_status: v("#d-stock"), published: $("#d-pub", dlg).checked, featured: $("#d-feat", dlg).checked,
+      };
+    } catch (ex) { return fail(ex.message); }
+    const btn = $("#d-save", dlg);
+    btn.disabled = true; btn.textContent = "در حال ذخیره…";
+    try {
+      const oldUrl = p.image_url || "";
+      let image_url = oldUrl;
+      if (newFile) image_url = await uploadImage(newFile);
+      else if (removeImage) image_url = "";
+      await upsert("products", { ...row, image_url, ...(isNew ? {} : { id: p.id }) });
+      if (oldUrl && oldUrl !== image_url) await deleteImage(oldUrl).catch(() => {});
+      close();
+      toast("محصول ذخیره شد.");
+      panel();
+    } catch (ex) {
+      btn.disabled = false; btn.textContent = "ذخیره";
+      fail(ex.message);
+    }
+  });
+}
+
+/* ---------------- دسته‌بندی و برند ---------------- */
+function taxoTab(body) {
+  const block = (table, title, items) => `
+    <section class="card" style="margin-bottom:1rem">
+      <h2>${title}</h2>
+      <form class="admin-bar" data-add="${table}"><input class="in" name="name" maxlength="80" placeholder="نام جدید" aria-label="نام ${title}" required><button class="btn btn--sm">افزودن</button></form>
+      ${items.length ? `<ul style="list-style:none;padding:0;margin:0">${items.map((x) => `
+        <li style="display:flex;gap:.5rem;align-items:center;padding:.5rem 0;border-top:1px solid var(--line)">
+          <span style="flex:1">${esc(x.name)}</span>
+          <button class="btn btn--ghost btn--sm" data-ren="${table}:${esc(x.id)}">تغییر نام</button>
+          <button class="btn btn--danger btn--sm" data-rm="${table}:${esc(x.id)}">حذف</button>
+        </li>`).join("")}</ul>` : `<p class="empty" style="padding:1rem">موردی ثبت نشده است.</p>`}
+    </section>`;
+  body.innerHTML = block("categories", "دسته‌بندی‌ها", A.categories) + block("brands", "برندها", A.brands);
+  body.onsubmit = guard(async (e) => {
+    const t = e.target.dataset.add;
+    if (!t) return;
+    e.preventDefault();
+    const name = new FormData(e.target).get("name").toString().trim();
+    if (!name) return;
+    await upsert(t, t === "categories" ? { name, sort_order: A.categories.length } : { name });
+    toast("اضافه شد.");
+    panel();
+  });
+  body.onclick = guard(async (e) => {
+    const ren = e.target.dataset.ren, rm = e.target.dataset.rm;
+    if (ren) {
+      const [t, id] = ren.split(":");
+      const cur = A[t].find((x) => x.id === id);
+      const name = prompt("نام جدید:", cur.name)?.trim();
+      if (name) { await upsert(t, { id, name }); toast("ذخیره شد."); panel(); }
+    } else if (rm) {
+      const [t, id] = rm.split(":");
+      const cur = A[t].find((x) => x.id === id);
+      const col = t === "categories" ? "category_id" : "brand_id";
+      const used = A.products.filter((p) => p[col] === id).length;
+      if (confirm(`«${cur.name}» حذف شود؟${used ? ` ${fa(used)} محصول بدون ${t === "categories" ? "دسته‌بندی" : "برند"} می‌شود.` : ""}`)) {
+        await remove(t, id); toast("حذف شد."); panel();
+      }
+    }
+  });
+}
+
+/* ---------------- درخواست‌ها ---------------- */
+async function inquiriesTab(body) {
+  A.inquiries = await listInquiries();
+  body.innerHTML = A.inquiries.length ? `
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th>تاریخ</th><th>مشتری</th><th>موارد درخواست</th><th>وضعیت</th><th></th></tr></thead><tbody>
+    ${A.inquiries.map((q) => `<tr>
+      <td>${esc(new Date(q.created_at).toLocaleString("fa-IR"))}</td>
+      <td><b>${esc(q.name)}</b><br><a href="tel:${esc(toLatinDigits(q.phone))}" dir="ltr">${esc(q.phone)}</a>${q.email ? `<br><small dir="ltr" style="color:var(--mute)">${esc(q.email)}</small>` : ""}</td>
+      <td>${(q.items || []).map((i) => `${esc(i.name)} <small dir="ltr">(${esc(i.sku)})</small> × ${fa(i.qty)}`).join("<br>")}${q.message ? `<p style="margin:.4rem 0 0;color:var(--mute);white-space:pre-line">${esc(q.message)}</p>` : ""}</td>
+      <td><select class="in" data-status="${esc(q.id)}" aria-label="وضعیت">${Object.entries(STATUS).map(([k, v]) => `<option value="${k}" ${k === q.status ? "selected" : ""}>${v}</option>`).join("")}</select></td>
+      <td><button class="btn btn--danger btn--sm" data-del="${esc(q.id)}">حذف</button></td>
+    </tr>`).join("")}</tbody></table></div>` : `<p class="empty">هنوز درخواستی ثبت نشده است.</p>`;
+  body.onchange = guard(async (e) => {
+    if (e.target.dataset.status) { await setInquiryStatus(e.target.dataset.status, e.target.value); toast("وضعیت ذخیره شد."); }
+  });
+  body.onclick = guard(async (e) => {
+    const id = e.target.dataset.del;
+    if (id && confirm("این درخواست حذف شود؟")) { await remove("inquiries", id); toast("حذف شد."); panel(); }
+  });
+}
+
+/* ---------------- تنظیمات و محتوا ---------------- */
+const FIELDS = [
+  ["company_name", "نام شرکت", "input"], ["hero_title", "عنوان بزرگ صفحه اصلی", "input"],
+  ["hero_subtitle", "توضیح زیر عنوان صفحه اصلی", "textarea"],
+  ["phone", "شماره تلفن", "input"],
+  ["messenger_url", "پیوند پیام‌رسان (مثلاً لینک واتساپ یا تلگرام)", "input"],
+  ["footer_text", "متن کوتاه پایین سایت", "input"],
+  ["about_text", "متن صفحه «درباره ما»", "textarea"],
+  ["order_terms", "شرایط سفارش", "textarea"],
+];
+
+function faqToText(json) {
+  try { return JSON.parse(json || "[]").map((x) => `${x.q}\n${x.a}`).join("\n\n"); } catch { return ""; }
+}
+function textToFaq(t) {
+  return t.split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean).map((b) => {
+    const [q, ...a] = b.split("\n");
+    return { q: q.trim(), a: a.join("\n").trim() };
+  }).slice(0, 50);
+}
+
+function settingsTab(body) {
+  const s = A.settings;
+  const logo = safeUrl(s.logo_url);
+  let extras = parseExtras(s.contact_extra);
+  const phoneIdx = FIELDS.findIndex(([k]) => k === "phone");
+  const field = ([k, label, type]) => `<div class="field"><label for="s-${k}">${label}</label>${type === "input"
+    ? `<input class="in" id="s-${k}" maxlength="300" value="${esc(s[k])}">`
+    : `<textarea class="in" id="s-${k}" maxlength="10000">${esc(s[k])}</textarea>`}</div>`;
+
+  body.innerHTML = `
+  <form class="card" id="set" novalidate>
+    <div class="notice">این اطلاعات در سایت نمایش داده می‌شود. فیلدهای خالی نمایش داده نمی‌شوند؛ اطلاعات واقعی و تأییدشده شرکت را وارد کنید.</div>
+    <div class="field"><label>لوگو</label>
+      <div style="display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+        <div id="s-prev">${logo ? `<img class="thumb" style="object-fit:contain" src="${esc(logo)}" alt="">` : `<div class="noimg thumb">${PLACEHOLDER_SVG}</div>`}</div>
+        <div><input type="file" id="s-logo" accept="image/jpeg,image/png,image/webp"><br>
+        <button type="button" class="btn btn--ghost btn--sm" id="s-logo-rm" style="margin-top:.4rem">حذف لوگو</button></div>
+      </div>
+    </div>
+    ${FIELDS.slice(0, phoneIdx + 1).map(field).join("")}
+
+    <div class="field">
+      <label>راه‌های ارتباطی دیگر</label>
+      <small>مثلاً واتساپ، تلگرام، اینستاگرام یا ایمیل. هر مورد در صفحه تماس و پایین سایت نمایش داده می‌شود. «لینک» اختیاری است و باید با https:// شروع شود (مثلاً https://wa.me/989195198753).</small>
+      <div id="x-list"></div>
+      <div><button type="button" class="btn btn--navy btn--sm" id="x-add">افزودن راه ارتباطی</button></div>
+    </div>
+
+    ${FIELDS.slice(phoneIdx + 1).map(field).join("")}
+    <div class="field"><label for="s-faq">سؤالات متداول</label><textarea class="in" id="s-faq" style="min-height:200px">${esc(faqToText(s.faq))}</textarea>
+      <small>هر سؤال را با یک خط خالی از بعدی جدا کنید. خط اول هر بخش «سؤال» و خط‌های بعدی «پاسخ» است.</small></div>
+    <p id="s-err" class="notice" style="display:none;background:#fde7e5" role="alert"></p>
+    <button class="btn" type="submit" id="s-save">ذخیره تنظیمات</button>
+  </form>`;
+
+  const drawExtras = () => {
+    $("#x-list").innerHTML = extras.length ? extras.map((x, i) => `
+      <div class="xrow" data-i="${i}">
+        <input class="in" data-k="label" placeholder="عنوان (مثلاً واتساپ)" maxlength="40" value="${esc(x.label)}" aria-label="عنوان">
+        <input class="in" data-k="value" placeholder="متن نمایشی (مثلاً ۰۹۱۲۳۴۵۶۷۸۹)" maxlength="120" value="${esc(x.value)}" aria-label="متن نمایشی">
+        <input class="in" data-k="url" dir="ltr" placeholder="لینک (اختیاری)" maxlength="300" value="${esc(x.url)}" aria-label="لینک">
+        <button type="button" class="btn btn--danger btn--sm" data-xdel="${i}">حذف</button>
+      </div>`).join("") : `<p class="hint" style="margin:.4rem 0">راه ارتباطی اضافه‌ای ثبت نشده است.</p>`;
+  };
+  drawExtras();
+  $("#x-list").oninput = (e) => {
+    const row = e.target.closest(".xrow");
+    if (row && e.target.dataset.k) extras[+row.dataset.i][e.target.dataset.k] = e.target.value;
+  };
+  $("#x-list").onclick = (e) => {
+    const i = e.target.dataset.xdel;
+    if (i !== undefined) { extras.splice(+i, 1); drawExtras(); }
+  };
+  $("#x-add").onclick = () => {
+    if (extras.length >= 12) return toast("حداکثر ۱۲ راه ارتباطی مجاز است.", "err");
+    extras.push({ label: "", value: "", url: "" });
+    drawExtras();
+    $("#x-list .xrow:last-child input")?.focus();
+  };
+
+  let logoFile = null, logoRemoved = false;
+  $("#s-logo").onchange = (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    logoFile = f; logoRemoved = false;
+    $("#s-prev").innerHTML = `<img class="thumb" style="object-fit:contain" alt="" src="${URL.createObjectURL(f)}">`;
+  };
+  $("#s-logo-rm").onclick = () => {
+    logoFile = null; logoRemoved = true; $("#s-logo").value = "";
+    $("#s-prev").innerHTML = `<div class="noimg thumb">${PLACEHOLDER_SVG}</div>`;
+  };
+  $("#set").onsubmit = guard(async (e) => {
+    e.preventDefault();
+    const btn = $("#s-save");
+    btn.disabled = true; btn.textContent = "در حال ذخیره…";
+    try {
+      const out = {};
+      FIELDS.forEach(([k]) => (out[k] = $(`#s-${k}`).value.trim()));
+      if (out.messenger_url && !safeUrl(out.messenger_url)) throw new Error("پیوند پیام‌رسان باید با https:// شروع شود.");
+      const cleaned = [];
+      for (const x of extras) {
+        const label = x.label.trim(), value = x.value.trim(), url = x.url.trim();
+        if (!label && !value && !url) continue;
+        if (!label || !value) throw new Error("عنوان و متن هر راه ارتباطی را کامل وارد کنید.");
+        if (url && !safeUrl(url)) throw new Error(`لینک «${label}» باید با https:// شروع شود.`);
+        cleaned.push({ label, value, url });
+      }
+      out.contact_extra = JSON.stringify(cleaned);
+      out.faq = JSON.stringify(textToFaq($("#s-faq").value));
+      const old = s.logo_url || "";
+      if (logoFile) out.logo_url = await uploadImage(logoFile);
+      else if (logoRemoved) out.logo_url = "";
+      await saveSettings(out);
+      if (old && out.logo_url !== undefined && old !== out.logo_url) await deleteImage(old).catch(() => {});
+      toast("تنظیمات ذخیره شد.");
+      panel();
+    } catch (ex) {
+      const el = $("#s-err");
+      el.textContent = ex.message; el.style.display = "block";
+      btn.disabled = false; btn.textContent = "ذخیره تنظیمات";
+    }
+  });
+}
+
+/* ---------------- مالکیت و دسترسی ---------------- */
+async function ownerTab(body) {
+  let owner = "";
+  try { owner = await getOwnerEmail(); } catch (ex) { console.error(ex); }
+  body.innerHTML = `
+  <section class="card">
+    <h2>مدیر کل سایت</h2>
+    <p>مدیر کل فعلی: <b dir="ltr">${esc(owner || (demo ? "حالت نمایشی" : "—"))}</b></p>
+    <p class="hint">فقط مدیر کل می‌تواند وارد پنل شود، محصولات را ویرایش کند و تنظیمات سایت را عوض کند. مشتری‌ها فقط می‌توانند ثبت‌نام کنند و درخواست بدهند.</p>
+    <hr style="border:0;border-top:1px solid var(--line);margin:1.2rem 0">
+    <h3>انتقال مدیریت</h3>
+    <p class="notice">با انتقال مدیریت، دسترسی کامل از حساب شما گرفته می‌شود و به ایمیل جدید داده می‌شود. ایمیل جدید باید قبلاً در سایت ثبت‌نام کرده و ایمیلش را تأیید کرده باشد. این کار برگشت‌پذیر نیست، مگر اینکه مدیر جدید دوباره مدیریت را به شما منتقل کند.</p>
+    <form id="tr" novalidate>
+      <div class="field"><label for="tr-email">ایمیل مدیر جدید</label>
+        <input class="in" id="tr-email" type="email" dir="ltr" autocomplete="off" ${demo ? "disabled" : ""}></div>
+      <p id="tr-err" class="notice err" style="display:none" role="alert"></p>
+      <button class="btn btn--danger" type="submit" ${demo ? "disabled" : ""}>انتقال مدیریت</button>
+    </form>
+  </section>`;
+  $("#tr").onsubmit = guard(async (e) => {
+    e.preventDefault();
+    const err = $("#tr-err");
+    const fail = (m) => { err.textContent = m; err.style.display = "block"; };
+    const email = $("#tr-email").value.trim().toLowerCase();
+    if (!/^\S+@\S+\.\S+$/.test(email)) return fail("ایمیل معتبر نیست.");
+    if (email === owner.toLowerCase()) return fail("این ایمیل همین حالا مدیر کل است.");
+    if (!confirm(`مدیریت کل سایت به «${email}» منتقل شود؟ بعد از این کار دیگر به پنل دسترسی نخواهید داشت.`)) return;
+    try {
+      await transferOwnership(email);
+    } catch (ex) {
+      return fail(ex.message);
+    }
+    toast("مدیریت منتقل شد.");
+    location.hash = "#/";
+    location.reload();
+  });
+}
+
+return { adminView };
+})();
+
+(() => {
+const {demo, getAll, getSettings, createInquiry, getUser, isAdmin, signOut, onAuthChange, parseExtras,} = __db;
+const {loginView, ordersView} = __account;
+const {$, $$, esc, fa, STOCK, toLatinDigits, toNumber, finalPrice, priceHTML, safeUrl, toast, productImage, debounce, validPhone,} = __utils;
+const S = { products: [], categories: [], brands: [], settings: {} };
+const PAGE_SIZE = 24;
+const main = $("#main");
+let lastRoute = "";
+let me = { user: null, admin: false };
+
+const byId = (list, id) => list.find((x) => x.id === id);
+const brandName = (id) => byId(S.brands, id)?.name || "";
+const catName = (id) => byId(S.categories, id)?.name || "";
+const company = () => S.settings.company_name || "پخش نور";
+
+/* ======================= داده ======================= */
+async function loadData() {
+  const [products, categories, brands, settings] = await Promise.all([
+    getAll("products", { publishedOnly: true }),
+    getAll("categories", { order: "sort_order", asc: true }),
+    getAll("brands", { order: "name", asc: true }),
+    getSettings(),
+  ]);
+  Object.assign(S, { products, categories, brands, settings });
+}
+
+async function refreshMe() {
+  try {
+    const user = await getUser();
+    me = { user, admin: user ? await isAdmin() : false };
+  } catch (ex) {
+    console.error(ex);
+    me = { user: null, admin: false };
+  }
+}
+
+async function afterAuth(next) {
+  await refreshMe();
+  renderHeader();
+  location.hash = next ? `#/${next}` : "#/";
+}
+
+/* ======================= سبد (درخواست خرید) ======================= */
+const CART_KEY = "pn_cart";
+const getCart = () => {
+  try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch { return []; }
+};
+const setCart = (c) => { localStorage.setItem(CART_KEY, JSON.stringify(c)); renderHeader(); };
+function addToCart(id, qty) {
+  const p = byId(S.products, id);
+  if (!p) return;
+  qty = Math.max(parseInt(toLatinDigits(qty), 10) || 1, p.min_order || 1);
+  const cart = getCart();
+  const it = cart.find((x) => x.id === id);
+  if (it) it.qty = Math.min(it.qty + qty, 100000); else cart.push({ id, qty });
+  setCart(cart);
+  toast("به درخواست خرید اضافه شد.");
+}
+
+/* ======================= قالب سایت ======================= */
+const LOGO_MARK = `<svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#F2A20C"/><path d="M16 50 38 14h10L26 50z" fill="#0A1B33"/><path d="M30 50 46 24h6L36 50z" fill="#0A1B33" opacity=".55"/></svg>`;
+
+let outsideBound = false;
+
+function renderHeader() {
+  const logo = safeUrl(S.settings.logo_url);
+  const count = getCart().reduce((n, i) => n + i.qty, 0);
+  const cur = location.hash.split("?")[0] || "#/";
+  const link = (href, label) =>
+    `<a href="${href}" ${cur === href ? 'aria-current="page"' : ""}>${label}</a>`;
+
+  let acct = "";
+  if (demo) {
+    acct = `<a class="loginlink" href="#/admin">پنل مدیریت</a>`;
+  } else if (me.user) {
+    const em = me.user.email || "";
+    const short = em.length > 22 ? `${em.slice(0, 20)}…` : em;
+    acct = `<details class="acct">
+      <summary aria-label="منوی حساب کاربری">${esc(short)}</summary>
+      <div class="acct__menu">
+        ${me.admin ? `<a href="#/admin">پنل مدیریت</a>` : ""}
+        <a href="#/orders">سفارش‌های من</a>
+        <button type="button" id="logout">خروج</button>
+      </div></details>`;
+  } else {
+    acct = `<a class="loginlink" href="#/login">ورود / ثبت‌نام</a>`;
+  }
+
+  $("#site-header").innerHTML = `
+    <div class="wrap bar">
+      <a class="logo" href="#/" aria-label="${esc(company())} — صفحه اصلی">
+        ${logo ? `<img src="${esc(logo)}" alt="">` : LOGO_MARK}<span>${esc(company())}</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="منوی اصلی">
+        ${link("#/", "خانه")}${link("#/shop", "محصولات")}${link("#/about", "درباره ما")}
+        ${link("#/faq", "سؤالات متداول")}${link("#/contact", "تماس با ما")}
+      </nav>
+      <div class="bar__tools">
+        <form class="search" role="search" id="search-form">
+          <input type="search" name="q" placeholder="نام یا کد کالا…" aria-label="جست‌وجوی محصولات" autocomplete="off">
+          <button aria-label="جست‌وجو">&#9906;</button>
+        </form>
+        ${acct}
+        <a class="cartlink" href="#/cart">درخواست خرید<b>${fa(count)}</b></a>
+        <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">منو</button>
+      </div>
+    </div>`;
+  $("#menu-btn").onclick = (e) => {
+    const open = $("#nav").classList.toggle("open");
+    e.currentTarget.setAttribute("aria-expanded", open);
+  };
+  $("#search-form").onsubmit = (e) => {
+    e.preventDefault();
+    const q = new FormData(e.target).get("q").toString().trim();
+    location.hash = q ? `#/search?q=${encodeURIComponent(q)}` : "#/shop";
+  };
+  $("#logout")?.addEventListener("click", async () => {
+    await signOut();
+    me = { user: null, admin: false };
+    renderHeader();
+    location.hash = "#/";
+  });
+  if (!outsideBound) {
+    outsideBound = true;
+    document.addEventListener("click", (e) => {
+      const d = $("details.acct[open]");
+      if (d && !d.contains(e.target)) d.removeAttribute("open");
+    });
+  }
+}
+
+function contactItems(s) {
+  const extras = parseExtras(s.contact_extra);
+  return extras.map((x) => {
+    const u = safeUrl(x.url);
+    const text = `${esc(x.label)}: ${esc(x.value)}`;
+    return { u, text, x };
+  });
+}
+
+function renderFooter() {
+  const s = S.settings;
+  const phone = toLatinDigits(s.phone || "").replace(/[^\d+]/g, "");
+  const extras = contactItems(s);
+  $("#site-footer").innerHTML = `
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <h3>${esc(company())}</h3>
+          <p>${esc(s.footer_text || "پخش و فروش عمده لوازم یدکی خودرو")}</p>
+        </div>
+        <div>
+          <h3>دسترسی سریع</h3>
+          <ul>
+            <li><a href="#/shop">محصولات</a></li><li><a href="#/about">درباره ما</a></li>
+            <li><a href="#/faq">سؤالات متداول و شرایط سفارش</a></li><li><a href="#/contact">تماس با ما</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>ارتباط با ما</h3>
+          <ul>
+            ${s.phone ? `<li><a href="tel:${esc(phone)}">${esc(s.phone)}</a></li>` : ""}
+            ${extras.map((e) => e.u
+              ? `<li><a href="${esc(e.u)}" target="_blank" rel="noopener noreferrer">${e.text}</a></li>`
+              : `<li>${e.text}</li>`).join("")}
+            ${!s.phone && !extras.length ? "<li>اطلاعات تماس به‌زودی اضافه می‌شود.</li>" : ""}
+          </ul>
+        </div>
+      </div>
+      <div class="foot__copy"><span>© ${esc(company())}</span></div>
+    </div>`;
+}
+
+/* ======================= اجزای مشترک ======================= */
+function productCard(p) {
+  const meta = [brandName(p.brand_id), catName(p.category_id)].filter(Boolean).join(" • ");
+  return `
+  <article class="pcard">
+    <a class="pcard__img" href="#/product/${esc(p.id)}" tabindex="-1" aria-hidden="true">${productImage(p)}</a>
+    <div class="pcard__body">
+      ${p.sku ? `<span class="pcard__sku">${esc(p.sku)}</span>` : ""}
+      <a class="pcard__name" href="#/product/${esc(p.id)}">${esc(p.name)}</a>
+      ${meta ? `<span class="pcard__meta">${esc(meta)}</span>` : ""}
+      <div class="pcard__foot">
+        ${priceHTML(p)}
+        <span class="tag tag--${esc(p.stock_status)}">${STOCK[p.stock_status] || ""}</span>
+      </div>
+    </div>
+  </article>`;
+}
+const setTitle = (t) => { document.title = t ? `${t} | ${company()}` : `${company()} | پخش و فروش عمده لوازم یدکی خودرو`; };
+
+/* ======================= صفحات ======================= */
+function homeView() {
+  const s = S.settings;
+  setTitle("");
+  const featured = S.products.filter((p) => p.featured);
+  const picks = (featured.length ? featured : S.products).slice(0, 8);
+  const counts = {};
+  S.products.forEach((p) => { counts[p.category_id] = (counts[p.category_id] || 0) + 1; });
+  main.innerHTML = `
+  <section class="hero">
+    <div class="wrap">
+      <h1>${esc(s.hero_title || "پخش عمده لوازم یدکی خودرو")}</h1>
+      <p>${esc(s.hero_subtitle || "کد کالا، برند و موجودی را ببینید و درخواست خرید یا استعلام قیمت خود را ثبت کنید.")}</p>
+      <div class="hero__cta">
+        <a class="btn" href="#/shop">مشاهده محصولات</a>
+        <a class="btn btn--ghost" href="#/contact">تماس با ما</a>
+      </div>
+    </div>
+  </section>
+  <section class="sec"><div class="wrap">
+    <div class="sec__head"><h2>دسته‌بندی لوازم یدکی</h2></div>
+    ${S.categories.length ? `<div class="cats">${S.categories.map((c) =>
+      `<a class="cat" href="#/category/${esc(c.id)}">${esc(c.name)}<small>${fa(counts[c.id] || 0)} کالا</small></a>`).join("")}</div>`
+      : `<p class="empty">هنوز دسته‌بندی‌ای ثبت نشده است.</p>`}
+  </div></section>
+  <section class="sec sec--white"><div class="wrap">
+    <div class="sec__head"><h2>${featured.length ? "محصولات منتخب" : "جدیدترین محصولات"}</h2><a href="#/shop">همه محصولات</a></div>
+    ${picks.length ? `<div class="pgrid">${picks.map(productCard).join("")}</div>`
+      : `<p class="empty">هنوز محصولی منتشر نشده است.</p>`}
+  </div></section>
+  ${S.brands.length ? `<section class="sec"><div class="wrap">
+    <div class="sec__head"><h2>برندها</h2></div>
+    <div class="brands">${S.brands.map((b) => `<a class="brand" href="#/shop?brand=${esc(b.id)}">${esc(b.name)}</a>`).join("")}</div>
+  </div></section>` : ""}`;
+}
+
+/* ---------- فروشگاه، دسته‌بندی، جست‌وجو ---------- */
+const norm = (s) => toLatinDigits(s).toLowerCase().replace(/ي/g, "ی").replace(/ك/g, "ک");
+
+function shopView(base, params, heading) {
+  const title = heading || "محصولات";
+  setTitle(title);
+  const vehicles = [...new Set(S.products.map((p) => p.vehicle).filter(Boolean))].sort();
+  const opt = (v, label, sel) => `<option value="${esc(v)}" ${sel ? "selected" : ""}>${esc(label)}</option>`;
+  const f = {
+    q: params.get("q") || "", cat: params.get("cat") || "", brand: params.get("brand") || "",
+    vehicle: params.get("vehicle") || "", min: params.get("min") || "", max: params.get("max") || "",
+    sort: params.get("sort") || "new", page: parseInt(params.get("page"), 10) || 1,
+  };
+  main.innerHTML = `
+  <div class="wrap">
+    <div class="crumbs"><a href="#/">خانه</a> / ${esc(title)}</div>
+    <div class="shop">
+      <aside class="filters" id="filters" aria-label="فیلتر محصولات">
+        <h3>فیلتر</h3>
+        <div class="field"><label for="f-q">جست‌وجو</label><input class="in" id="f-q" value="${esc(f.q)}" placeholder="نام، کد کالا یا برند"></div>
+        <div class="field"><label for="f-cat">دسته‌بندی</label><select class="in" id="f-cat">${opt("", "همه", !f.cat)}${S.categories.map((c) => opt(c.id, c.name, c.id === f.cat)).join("")}</select></div>
+        <div class="field"><label for="f-brand">برند</label><select class="in" id="f-brand">${opt("", "همه", !f.brand)}${S.brands.map((b) => opt(b.id, b.name, b.id === f.brand)).join("")}</select></div>
+        ${vehicles.length ? `<div class="field"><label for="f-vehicle">خودرو</label><select class="in" id="f-vehicle">${opt("", "همه", !f.vehicle)}${vehicles.map((v) => opt(v, v, v === f.vehicle)).join("")}</select></div>` : ""}
+        <div class="grid2">
+          <div class="field"><label for="f-min">قیمت از (تومان)</label><input class="in" id="f-min" inputmode="numeric" value="${esc(f.min)}"></div>
+          <div class="field"><label for="f-max">تا (تومان)</label><input class="in" id="f-max" inputmode="numeric" value="${esc(f.max)}"></div>
+        </div>
+        <button class="btn btn--ghost btn--sm" id="f-reset" type="button">پاک کردن فیلترها</button>
+      </aside>
+      <section aria-live="polite">
+        <div class="toolbar">
+          <h1 style="font-size:1.4rem;margin:0">${esc(title)}</h1>
+          <span id="count" style="color:var(--mute)"></span>
+          <button class="btn btn--navy btn--sm filters-toggle" id="ft" type="button">فیلترها</button>
+          <select class="in" id="f-sort" aria-label="مرتب‌سازی">
+            ${opt("new", "جدیدترین", f.sort === "new")}${opt("price_asc", "ارزان‌ترین", f.sort === "price_asc")}${opt("price_desc", "گران‌ترین", f.sort === "price_desc")}
+          </select>
+        </div>
+        <div id="results"></div>
+      </section>
+    </div>
+  </div>`;
+
+  const results = $("#results");
+  function apply() {
+    const q = norm(f.q).trim();
+    const min = toNumber(f.min), max = toNumber(f.max);
+    let list = S.products.filter((p) => {
+      if (f.cat && p.category_id !== f.cat) return false;
+      if (f.brand && p.brand_id !== f.brand) return false;
+      if (f.vehicle && p.vehicle !== f.vehicle) return false;
+      if (min != null || max != null) {
+        const fp = finalPrice(p);
+        if (fp == null) return false;
+        if (min != null && fp < min) return false;
+        if (max != null && fp > max) return false;
+      }
+      if (q) {
+        const hay = norm([p.name, p.sku, p.description, brandName(p.brand_id), catName(p.category_id), p.vehicle].join(" "));
+        return q.split(/\s+/).every((w) => hay.includes(w));
+      }
+      return true;
+    });
+    const priceKey = (p, dir) => finalPrice(p) ?? (dir === "asc" ? Infinity : -Infinity);
+    if (f.sort === "price_asc") list.sort((a, b) => priceKey(a, "asc") - priceKey(b, "asc"));
+    else if (f.sort === "price_desc") list.sort((a, b) => priceKey(b, "desc") - priceKey(a, "desc"));
+    else list.sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)));
+
+    const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    f.page = Math.min(Math.max(f.page, 1), pages);
+    $("#count").textContent = `${fa(list.length)} کالا`;
+    const slice = list.slice((f.page - 1) * PAGE_SIZE, f.page * PAGE_SIZE);
+    results.innerHTML = slice.length
+      ? `<div class="pgrid">${slice.map(productCard).join("")}</div>${pages > 1 ? `<nav class="pager" aria-label="صفحه‌بندی">${Array.from({ length: pages }, (_, i) => `<button data-page="${i + 1}" ${i + 1 === f.page ? 'aria-current="true"' : ""}>${fa(i + 1)}</button>`).join("")}</nav>` : ""}`
+      : `<p class="empty">محصولی با این مشخصات پیدا نشد. فیلترها را تغییر دهید یا از ما <a href="#/contact" style="text-decoration:underline">استعلام بگیرید</a>.</p>`;
+    const qs = new URLSearchParams();
+    Object.entries(f).forEach(([k, v]) => { if (v && !(k === "sort" && v === "new") && !(k === "page" && v === 1)) qs.set(k, v); });
+    history.replaceState(null, "", `#${base}${qs.toString() ? "?" + qs : ""}`);
+  }
+  const bind = (id, key, wait = 0) => {
+    const el = $(id);
+    const h = () => { f[key] = el.value.trim(); f.page = 1; apply(); };
+    el?.addEventListener(wait ? "input" : "change", wait ? debounce(h, wait) : h);
+  };
+  bind("#f-q", "q", 250); bind("#f-cat", "cat"); bind("#f-brand", "brand");
+  bind("#f-vehicle", "vehicle"); bind("#f-min", "min", 350); bind("#f-max", "max", 350); bind("#f-sort", "sort");
+  results.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-page]");
+    if (b) { f.page = +b.dataset.page; apply(); window.scrollTo({ top: 0 }); }
+  });
+  $("#f-reset").onclick = () => { shopView(base, new URLSearchParams(), heading); };
+  $("#ft").onclick = () => $("#filters").classList.toggle("open");
+  apply();
+}
+
+/* ---------- جزئیات محصول ---------- */
+function productView(id) {
+  const p = byId(S.products, id);
+  if (!p) return notFound("این محصول پیدا نشد یا دیگر منتشر نشده است.");
+  setTitle(p.name);
+  const specs = Array.isArray(p.specs) ? p.specs.filter((r) => r && r.k) : [];
+  const rows = [
+    ["کد کالا", p.sku], ["برند", brandName(p.brand_id)], ["دسته‌بندی", catName(p.category_id)],
+    ["خودرو", p.vehicle], ["حداقل تعداد سفارش", p.min_order > 1 ? fa(p.min_order) : ""],
+    ["قیمت عمده", p.wholesale_price != null ? `${fa(p.wholesale_price)} تومان` : ""],
+  ].filter((r) => r[1]);
+  const related = S.products.filter((x) => x.id !== p.id && x.category_id === p.category_id).slice(0, 4);
+  const msg = safeUrl(S.settings.messenger_url);
+  const phone = toLatinDigits(S.settings.phone || "").replace(/[^\d+]/g, "");
+  main.innerHTML = `
+  <div class="wrap">
+    <div class="crumbs"><a href="#/">خانه</a> / <a href="#/shop">محصولات</a>${p.category_id ? ` / <a href="#/category/${esc(p.category_id)}">${esc(catName(p.category_id))}</a>` : ""}</div>
+    <div class="pdetail">
+      <div class="pdetail__img">${productImage(p)}</div>
+      <div>
+        <h1 style="font-size:1.6rem">${esc(p.name)}</h1>
+        <span class="tag tag--${esc(p.stock_status)}">${STOCK[p.stock_status] || ""}</span>
+        <div class="pdetail__price">${priceHTML(p)}</div>
+        ${p.discount_percent > 0 && p.price != null && p.stock_status !== "call" ? `<p class="tag tag--call" style="display:inline-block">${fa(p.discount_percent)}٪ تخفیف</p>` : ""}
+        <div class="buyrow">
+          <input class="in qty" id="qty" type="number" min="${p.min_order || 1}" value="${p.min_order || 1}" aria-label="تعداد">
+          <button class="btn" id="add">${p.stock_status === "available" ? "افزودن به درخواست خرید" : "افزودن به درخواست استعلام"}</button>
+          ${phone ? `<a class="btn btn--ghost" href="tel:${esc(phone)}">تماس با شرکت</a>` : ""}
+          ${msg ? `<a class="btn btn--ghost" href="${esc(msg)}" target="_blank" rel="noopener noreferrer">پیام‌رسان</a>` : ""}
+        </div>
+        ${rows.length ? `<table class="facts"><tbody>${rows.map((r) => `<tr><th>${r[0]}</th><td>${esc(r[1])}</td></tr>`).join("")}</tbody></table>` : ""}
+      </div>
+    </div>
+    ${p.description ? `<section class="card"><h2>توضیحات</h2><div class="prose">${esc(p.description)}</div></section>` : ""}
+    ${specs.length ? `<section style="margin-top:1rem"><h2>مشخصات فنی</h2><table class="facts"><tbody>${specs.map((r) => `<tr><th>${esc(r.k)}</th><td>${esc(r.v)}</td></tr>`).join("")}</tbody></table></section>` : ""}
+    ${related.length ? `<section class="sec"><h2>محصولات مرتبط</h2><div class="pgrid">${related.map(productCard).join("")}</div></section>` : ""}
+  </div>`;
+  $("#add").onclick = () => addToCart(p.id, $("#qty").value);
+}
+
+/* ---------- سبد / ثبت درخواست ---------- */
+function cartView() {
+  setTitle("درخواست خرید");
+  const cart = getCart().filter((i) => byId(S.products, i.id));
+  const items = cart.map((i) => ({ ...i, p: byId(S.products, i.id) }));
+  const needLogin = !demo && !me.user;
+  main.innerHTML = `
+  <div class="wrap page">
+    <h1>درخواست خرید</h1>
+    <p class="notice">ثبت این فرم پرداخت یا خرید قطعی نیست. همکاران ما پس از بررسی، قیمت و موجودی را با شما هماهنگ می‌کنند.</p>
+    ${items.length ? `<div class="card">
+      ${items.map((i) => `<div class="cartrow" data-id="${esc(i.id)}">
+        ${productImage(i.p)}
+        <div><a href="#/product/${esc(i.id)}"><b>${esc(i.p.name)}</b></a><br><small style="color:var(--mute)">${esc(i.p.sku)}${i.p.min_order > 1 ? ` — حداقل سفارش: ${fa(i.p.min_order)}` : ""}</small></div>
+        <input class="in qty" type="number" min="${i.p.min_order || 1}" value="${i.qty}" aria-label="تعداد ${esc(i.p.name)}">
+        <button class="btn btn--ghost btn--sm" data-del aria-label="حذف ${esc(i.p.name)}">حذف</button>
+      </div>`).join("")}
+    </div>` : `<p class="empty">فهرست درخواست شما خالی است. <a href="#/shop" style="text-decoration:underline">محصولات را ببینید</a> یا از صفحه تماس، پیام بفرستید.</p>`}
+    ${items.length && needLogin ? `<div class="card gate" style="margin-top:1rem">
+      <h2>برای ثبت درخواست وارد شوید</h2>
+      <p>با ایمیل خود وارد شوید یا ثبت‌نام کنید. فهرست درخواست شما حفظ می‌شود و بعداً وضعیت سفارش را در «سفارش‌های من» می‌بینید.</p>
+      <a class="btn" href="#/login?next=cart">ورود / ثبت‌نام</a>
+    </div>` : ""}
+    ${items.length && !needLogin ? `<form class="card" id="inq" style="margin-top:1rem" novalidate>
+      <h2>اطلاعات تماس شما</h2>
+      ${me.user ? `<p class="hint">حساب: <b dir="ltr">${esc(me.user.email)}</b></p>` : ""}
+      ${inquiryFields()}
+      <button class="btn" type="submit">ثبت درخواست</button>
+    </form>` : ""}
+  </div>`;
+  if (!items.length) return;
+  $$(".cartrow").forEach((row) => {
+    const id = row.dataset.id;
+    $(".qty", row).onchange = (e) => {
+      const p = byId(S.products, id);
+      const q = Math.max(parseInt(toLatinDigits(e.target.value), 10) || 1, p.min_order || 1);
+      e.target.value = q;
+      setCart(getCart().map((x) => (x.id === id ? { ...x, qty: q } : x)));
+    };
+    $("[data-del]", row).onclick = () => { setCart(getCart().filter((x) => x.id !== id)); cartView(); };
+  });
+  const form = $("#inq");
+  if (form) form.onsubmit = (e) => submitInquiry(e, () => items.map((i) => ({ id: i.id, name: i.p.name, sku: i.p.sku, qty: i.qty })), () => { setCart([]); });
+}
+
+function inquiryFields(needMessage = false) {
+  return `
+    <div class="grid2">
+      <div class="field"><label for="i-name">نام و نام خانوادگی / نام شرکت</label><input class="in" id="i-name" name="name" maxlength="100" autocomplete="name" required></div>
+      <div class="field"><label for="i-phone">شماره تماس</label><input class="in" id="i-phone" name="phone" inputmode="tel" dir="ltr" maxlength="20" autocomplete="tel" required></div>
+    </div>
+    <div class="field"><label for="i-msg">${needMessage ? "پیام شما" : "توضیحات (اختیاری)"}</label><textarea class="in" id="i-msg" name="message" maxlength="2000" ${needMessage ? "required" : ""}></textarea></div>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p id="i-err" class="notice" style="display:none;background:#fde7e5;border-color:#f3b7b1;color:#7a1b12" role="alert"></p>`;
+}
+
+async function submitInquiry(e, getItems, onDone, needMessage = false) {
+  e.preventDefault();
+  const form = e.target;
+  const fd = new FormData(form);
+  const err = $("#i-err");
+  const showErr = (m) => { err.textContent = m; err.style.display = "block"; err.scrollIntoView({ block: "nearest" }); };
+  if (fd.get("website")) return; // ربات‌ها
+  const name = fd.get("name").toString().trim();
+  const phone = toLatinDigits(fd.get("phone")).trim();
+  const message = fd.get("message").toString().trim();
+  if (name.length < 2) return showErr("نام را وارد کنید.");
+  if (!validPhone(phone)) return showErr("شماره تماس معتبر نیست.");
+  if (needMessage && message.length < 5) return showErr("پیام خود را بنویسید.");
+  const last = +localStorage.getItem("pn_last_inq") || 0;
+  if (Date.now() - last < 30000) return showErr("لطفاً چند ثانیه بعد دوباره تلاش کنید.");
+  const btn = $("button[type=submit]", form);
+  btn.disabled = true; btn.textContent = "در حال ثبت…";
+  try {
+    await createInquiry({ name, phone, message, items: getItems() });
+    localStorage.setItem("pn_last_inq", String(Date.now()));
+    onDone();
+    main.innerHTML = `<div class="wrap page"><div class="card" style="text-align:center"><h1>درخواست شما ثبت شد</h1><p>به‌زودی با شماره‌ای که وارد کردید تماس گرفته می‌شود.</p>
+      <a class="btn" href="#/shop">بازگشت به محصولات</a>
+      ${me.user ? `<a class="btn btn--ghost" href="#/orders" style="margin-inline-start:.5rem">سفارش‌های من</a>` : ""}</div></div>`;
+    window.scrollTo({ top: 0 });
+  } catch (ex) {
+    btn.disabled = false; btn.textContent = needMessage ? "ارسال" : "ثبت درخواست";
+    showErr("ثبت درخواست انجام نشد. اتصال اینترنت را بررسی کنید و دوباره تلاش کنید.");
+    console.error(ex);
+  }
+}
+
+/* ---------- صفحات محتوایی ---------- */
+function aboutView() {
+  setTitle("درباره ما");
+  const t = S.settings.about_text;
+  main.innerHTML = `<div class="wrap page"><h1>درباره ${esc(company())}</h1>
+    ${t ? `<div class="prose">${esc(t)}</div>` : `<p class="empty">متن معرفی شرکت هنوز از پنل مدیریت ثبت نشده است.</p>`}
+    <a class="btn" href="#/shop">مشاهده محصولات</a></div>`;
+}
+
+function faqView() {
+  setTitle("سؤالات متداول و شرایط سفارش");
+  let faq = [];
+  try { faq = JSON.parse(S.settings.faq || "[]"); } catch {}
+  faq = Array.isArray(faq) ? faq.filter((x) => x && x.q) : [];
+  const terms = S.settings.order_terms;
+  main.innerHTML = `<div class="wrap page"><h1>سؤالات متداول</h1>
+    ${faq.length ? faq.map((x) => `<details class="faq"><summary>${esc(x.q)}</summary><div>${esc(x.a)}</div></details>`).join("") : `<p class="empty">هنوز سؤالی ثبت نشده است.</p>`}
+    <h2 style="margin-top:2rem">شرایط سفارش</h2>
+    ${terms ? `<div class="prose card">${esc(terms)}</div>` : `<p class="empty">شرایط سفارش هنوز از پنل مدیریت ثبت نشده است.</p>`}</div>`;
+}
+
+function contactView() {
+  setTitle("تماس با ما");
+  const s = S.settings;
+  const phone = toLatinDigits(s.phone || "").replace(/[^\d+]/g, "");
+  const msg = safeUrl(s.messenger_url);
+  const extras = contactItems(s);
+  const has = s.phone || extras.length || msg;
+  main.innerHTML = `<div class="wrap page" style="max-width:980px"><h1>تماس با ما</h1>
+    <div class="cols">
+      <div class="card"><h2>اطلاعات تماس</h2>
+        ${has ? `<ul style="list-style:none;padding:0;margin:0;display:grid;gap:.6rem">
+          ${s.phone ? `<li>تلفن: <a href="tel:${esc(phone)}" dir="ltr"><b>${esc(s.phone)}</b></a></li>` : ""}
+          ${extras.map((e) => e.u
+            ? `<li>${esc(e.x.label)}: <a href="${esc(e.u)}" target="_blank" rel="noopener noreferrer"><b>${esc(e.x.value)}</b></a></li>`
+            : `<li>${e.text}</li>`).join("")}
+        </ul>
+        <div class="buyrow">${phone ? `<a class="btn" href="tel:${esc(phone)}">تماس تلفنی</a>` : ""}${msg ? `<a class="btn btn--ghost" href="${esc(msg)}" target="_blank" rel="noopener noreferrer">پیام‌رسان</a>` : ""}</div>`
+        : `<p class="empty" style="padding:1rem 0">اطلاعات تماس هنوز از پنل مدیریت ثبت نشده است. فعلاً از فرم کنار صفحه استفاده کنید.</p>`}
+      </div>
+      <form class="card" id="inq" novalidate><h2>ارسال پیام یا استعلام</h2>${inquiryFields(true)}<button class="btn" type="submit">ارسال</button></form>
+    </div></div>`;
+  $("#inq").onsubmit = (e) => submitInquiry(e, () => [], () => {}, true);
+}
+
+function notFound(text = "صفحه‌ای که دنبالش هستید پیدا نشد.") {
+  setTitle("پیدا نشد");
+  main.innerHTML = `<div class="wrap page"><div class="card" style="text-align:center"><h1>۴۰۴</h1><p>${esc(text)}</p><a class="btn" href="#/">بازگشت به صفحه اصلی</a></div></div>`;
+}
+
+/* ======================= مسیریاب ======================= */
+async function route() {
+  const raw = location.hash.slice(1) || "/";
+  const [path, query = ""] = raw.split("?");
+  const params = new URLSearchParams(query);
+  const seg = path.split("/").filter(Boolean);
+  $("#nav")?.classList.remove("open");
+
+  if (seg[0] === "admin") {
+    lastRoute = "admin";
+    main.innerHTML = `<p class="loading">در حال بارگذاری پنل مدیریت…</p>`;
+    try {
+      const { adminView } = __admin;
+      await adminView(main, seg[1] || "");
+    } catch (ex) {
+      console.error(ex);
+      main.innerHTML = `<p class="empty">بارگذاری پنل مدیریت ناموفق بود.</p>`;
+    }
+    renderHeader();
+    window.scrollTo({ top: 0 });
+    return;
+  }
+  if (lastRoute === "admin") { await loadData().catch(() => {}); renderHeader(); renderFooter(); }
+  lastRoute = path;
+
+  const view = {
+    "": () => homeView(),
+    shop: () => shopView("/shop", params),
+    search: () => shopView("/search", params, params.get("q") ? `نتایج جست‌وجو: ${params.get("q")}` : "جست‌وجو"),
+    category: () => {
+      const c = byId(S.categories, seg[1]);
+      if (!c) return notFound("این دسته‌بندی پیدا نشد.");
+      params.set("cat", c.id);
+      shopView(`/category/${c.id}`, params, c.name);
+    },
+    product: () => productView(seg[1]),
+    about: aboutView, faq: faqView, contact: contactView, cart: cartView,
+    login: () => {
+      if (me.user) { location.hash = "#/"; return; }
+      loginView(main, { next: params.get("next") || "", onDone: afterAuth });
+    },
+    orders: () => ordersView(main, me.user),
+  }[seg[0] || ""];
+  (view || notFound)();
+  renderHeader();
+  window.scrollTo({ top: 0 });
+  if (!location.hash.includes("?")) main.focus({ preventScroll: true });
+}
+
+/* ======================= شروع ======================= */
+async function start() {
+  if (demo) {
+    const b = $("#demo-banner");
+    b.hidden = false;
+    b.textContent = "حالت نمایشی: اتصال پایگاه داده تنظیم نشده و داده‌ها فقط در همین مرورگر ذخیره می‌شوند. برای راه‌اندازی واقعی، فایل README را ببینید.";
+  }
+  try {
+    await loadData();
+  } catch (ex) {
+    console.error(ex);
+    main.innerHTML = `<div class="wrap page"><div class="card" style="text-align:center"><h1>خطا در دریافت اطلاعات</h1><p>اتصال به پایگاه داده برقرار نشد. اتصال اینترنت و تنظیمات Supabase را بررسی کنید.</p><button class="btn" onclick="location.reload()">تلاش دوباره</button></div></div>`;
+    return;
+  }
+  await refreshMe();
+  renderHeader();
+  renderFooter();
+  onAuthChange(async () => { await refreshMe(); renderHeader(); });
+  window.addEventListener("hashchange", route);
+  route();
+}
+start();
+
+})();
+</script>
+</body>
+</html>
